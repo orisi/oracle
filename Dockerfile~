@@ -1,7 +1,7 @@
 
 
 FROM ubuntu:12.04
-MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
+MAINTAINER Sean Lavine <sean@vaurum.com>
 
 RUN apt-get update
 RUN apt-get install --yes build-essential libssl-dev libboost-all-dev
@@ -13,21 +13,23 @@ RUN apt-get install --yes db4.8
 
 RUN apt-get install --yes git
 
-RUN adduser --disabled-login --gecos "" orisi
+RUN adduser --disabled-login --gecos "" tester
 
-WORKDIR /home/orisi
+WORKDIR /home/tester
 
-RUN git clone https://github.com/bitcoin/bitcoin.git
+RUN git clone https://github.com/freewil/bitcoin.git
+RUN cd bitcoin && git checkout easy-mining
 RUN cd bitcoin/src && make -f makefile.unix USE_UPNP=
+
 RUN cp bitcoin/src/bitcoind /usr/local/bin/bitcoind
 
-ADD . /home/orisi/testoracle
+ADD . /home/tester/bitcoin-testnet-box
 
-RUN chown -R orisi:orisi /home/tester/testoracle
+RUN chown -R tester:tester /home/tester/bitcoin-testnet-box
 
-USER orisi
+USER tester
 
-WORKDIR /home/orisi/testoracle
+WORKDIR /home/tester/bitcoin-testnet-box
 
 EXPOSE 19001 19011
 CMD ["/bin/bash"]
