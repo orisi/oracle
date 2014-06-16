@@ -23,7 +23,7 @@ RUN cp bitcoin/src/bitcoind /usr/local/bin/bitcoind
 
 ADD . /home/orisi/testoracle
 
-RUN chown -R orisi:orisi /home/tester/testoracle
+RUN chown -R orisi:orisi /home/orisi/testoracle
 
 USER orisi
 
