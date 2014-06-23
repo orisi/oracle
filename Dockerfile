@@ -28,12 +28,8 @@ WORKDIR /bitcoind
 EXPOSE 8333
 EXPOSE 8332
 
-ADD	enter /enter
-RUN	chmod +x /enter
 
 # just a check that bitcoind exists on path
 RUN file `which bitcoind`
-
-ENTRYPOINT ["/enter"]
 
 
