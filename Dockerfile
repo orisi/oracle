@@ -15,10 +15,16 @@ RUN apt-get install --yes git
 
 RUN adduser --disabled-login --gecos "" orisi
 
+
+
+
 WORKDIR /home/orisi
 
 RUN git clone https://github.com/bitcoin/bitcoin.git
-RUN cd bitcoin/src && ./autogen.sh && ./configure && make
+
+WORKDIR /home/orisi/bitcoin/src
+
+RUN ./autogen.sh && ./configure && make
  
 RUN cp bitcoin/src/bitcoind /usr/local/bin/bitcoind
 
