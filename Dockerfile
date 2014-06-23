@@ -24,6 +24,7 @@ RUN git clone https://github.com/bitcoin/bitcoin.git
 
 WORKDIR /home/orisi/bitcoin/src
 
+RUN pwd
 RUN ./autogen.sh && ./configure && make
  
 RUN cp bitcoin/src/bitcoind /usr/local/bin/bitcoind
