@@ -18,7 +18,7 @@ RUN adduser --disabled-login --gecos "" orisi
 WORKDIR /home/orisi
 
 RUN git clone https://github.com/bitcoin/bitcoin.git
-RUN cd bitcoin/src && make -f makefile.unix USE_UPNP=
+RUN cd bitcoin/src && make 
 RUN cp bitcoin/src/bitcoind /usr/local/bin/bitcoind
 
 ADD . /home/orisi/testoracle
