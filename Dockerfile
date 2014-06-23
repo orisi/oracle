@@ -31,5 +31,5 @@ EXPOSE 8332
 
 # just a check that bitcoind exists on path
 RUN file `which bitcoind`
-
+ENTRYPOINT bitcoind
 
