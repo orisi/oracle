@@ -3,41 +3,37 @@
 FROM ubuntu:12.04
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
-RUN apt-get update
-RUN apt-get install --yes build-essential libssl-dev libboost-all-dev
 
-RUN apt-get install --yes python-software-properties
-RUN add-apt-repository --yes ppa:bitcoin/bitcoin
-RUN apt-get update
-RUN apt-get install --yes db4.8
-
-RUN apt-get install --yes git
-
-RUN adduser --disabled-login --gecos "" orisi
+ENV BITCOIN_DOWNLOAD_VERSION 0.9.1
+ENV BITCOIN_DOWNLOAD_MD5_CHECKSUM 7a9c14c09b04e3e37d703fbfe5c3b1e2
 
 
+RUN apt-get install -y wget build-essential make g++ python-leveldb libboost-all-dev libssl-dev libdb++-dev libtool autotools-dev autoconf libboost-all-dev bsdmainutils pkg-config
 
+WORKDIR /tmp
+RUN wget --no-check-certificate https://github.com/bitcoin/bitcoin/archive/v$BITCOIN_DOWNLOAD_VERSION.tar.gz
 
-WORKDIR /home/orisi
+RUN echo "$BITCOIN_DOWNLOAD_MD5_CHECKSUM  v$BITCOIN_DOWNLOAD_VERSION.tar.gz" | md5sum -c -
+RUN tar xfz v$BITCOIN_DOWNLOAD_VERSION.tar.gz && mv bitcoin-$BITCOIN_DOWNLOAD_VERSION bitcoin
 
-RUN git clone https://github.com/bitcoin/bitcoin.git
+WORKDIR /tmp/bitcoin
+RUN ./autogen.sh
+RUN ./configure --disable-wallet
+RUN make
+RUN make install
 
-WORKDIR /home/orisi/bitcoin/src
+ADD . /bitcoind
+WORKDIR /bitcoind
 
-RUN pwd
-RUN ./autogen.sh && ./configure && make
- 
-RUN cp bitcoin/src/bitcoind /usr/local/bin/bitcoind
+EXPOSE 8333
+EXPOSE 8332
 
-ADD . /home/orisi/testoracle
+ADD	enter /enter
+RUN	chmod +x /enter
 
-RUN chown -R orisi:orisi /home/orisi/testoracle
+# just a check that bitcoind exists on path
+RUN file `which bitcoind`
 
-USER orisi
-
-WORKDIR /home/orisi/testoracle
-
-EXPOSE 19001 19011
-CMD ["/bin/bash"]
+ENTRYPOINT ["/enter"]
 
 
