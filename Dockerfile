@@ -26,7 +26,7 @@ RUN whereis git
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN git clone git://github.com/Bitmessage/PyBitmessage.git
-ADD orisi/src/settings_local.py.example orisi/src/settings_local.py
+RUN cp orisi/src/settings_local.py.example orisi/src/settings_local.py
 RUN mkdir .bitcoin/
 RUN touch .bitcoin/bitcoin.conf
 
