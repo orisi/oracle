@@ -37,8 +37,6 @@ RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 
 
 RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
-RUN ~/.config/
-RUN ~/.config/PyBitmessage/
 
 
 RUN echo daemon = true >> .config/PyBitmessage/keys.dat
