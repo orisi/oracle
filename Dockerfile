@@ -48,14 +48,6 @@ ENV BMPW "openssl rand -hex 32"
 RUN echo "apipassword = $BMPW" >> ~/.config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
-ADD . /bitcoind
-WORKDIR /bitcoind
 
-EXPOSE 8333
-EXPOSE 8332
-
-
-# just a check that bitcoind exists on path
-RUN file `which bitcoind`
-ENTRYPOINT bitcoind
-
+RUN bitcoin/bin/$(getconf LONG_BIT)/bitcoind -connect=127.0.0.1 &
+RUN python orisi/src/run_oracle.py
