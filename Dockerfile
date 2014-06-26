@@ -22,6 +22,32 @@ RUN ./configure --disable-wallet
 RUN make
 RUN make install
 
+RUN git clone  https://github.com/orisi/orisi.git
+RUN git clone git://github.com/Bitmessage/PyBitmessage.git
+ADD orisi/src/settings_local.py.example orisi/src/settings_local.py
+RUN mkdir .bitcoin/
+RUN touch .bitcoin/bitcoin.conf
+
+ENV BTCRPC "openssl rand -hex 32"
+RUN echo rpcuser=bitrpc >> ~/.bitcoin/bitcoin.conf
+RUN echo rpcpassword=$BTCRPC >> ~/.bitcoin/bitcoin.conf
+RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
+
+
+RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
+RUN ~/.config/
+RUN ~/.config/PyBitmessage/
+
+
+RUN echo daemon = true >> ~/.config/PyBitmessage/keys.dat
+RUN echo apienabled = true >> ~/.config/PyBitmessage/keys.dat
+RUN echo apiport = 8442 >> ~/.config/PyBitmessage/keys.dat
+RUN echo apiinterface = 127.0.0.1 >> ~/.config/PyBitmessage/keys.dat
+RUN echo apiusername = bitrpc >> ~/.config/PyBitmessage/keys.dat
+ENV BMPW "openssl rand -hex 32"
+RUN echo "apipassword = $BMPW" >> ~/.config/PyBitmessage/keys.dat
+RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
+
 ADD . /bitcoind
 WORKDIR /bitcoind
 
