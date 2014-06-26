@@ -31,8 +31,8 @@ RUN mkdir .bitcoin
 RUN touch .bitcoin/bitcoin.conf
 
 ENV BTCRPC "openssl rand -hex 32"
-RUN echo rpcuser=bitrpc >> ~/.bitcoin/bitcoin.conf
-RUN echo rpcpassword=$BTCRPC >> ~/.bitcoin/bitcoin.conf
+RUN echo rpcuser=bitrpc >> .bitcoin/bitcoin.conf
+RUN echo rpcpassword=$BTCRPC >> .bitcoin/bitcoin.conf
 RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 
 
@@ -41,13 +41,13 @@ RUN ~/.config/
 RUN ~/.config/PyBitmessage/
 
 
-RUN echo daemon = true >> ~/.config/PyBitmessage/keys.dat
-RUN echo apienabled = true >> ~/.config/PyBitmessage/keys.dat
-RUN echo apiport = 8442 >> ~/.config/PyBitmessage/keys.dat
-RUN echo apiinterface = 127.0.0.1 >> ~/.config/PyBitmessage/keys.dat
-RUN echo apiusername = bitrpc >> ~/.config/PyBitmessage/keys.dat
+RUN echo daemon = true >> .config/PyBitmessage/keys.dat
+RUN echo apienabled = true >> .config/PyBitmessage/keys.dat
+RUN echo apiport = 8442 >> .config/PyBitmessage/keys.dat
+RUN echo apiinterface = 127.0.0.1 >> .config/PyBitmessage/keys.dat
+RUN echo apiusername = bitrpc >> .config/PyBitmessage/keys.dat
 ENV BMPW "openssl rand -hex 32"
-RUN echo "apipassword = $BMPW" >> ~/.config/PyBitmessage/keys.dat
+RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
 
