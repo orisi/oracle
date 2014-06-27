@@ -8,7 +8,7 @@ ENV BITCOIN_DOWNLOAD_VERSION 0.9.1
 ENV BITCOIN_DOWNLOAD_MD5_CHECKSUM 7a9c14c09b04e3e37d703fbfe5c3b1e2
 
 RUN apt-get update
-RUN apt-get install -y git wget build-essential make g++  libboost-all-dev libssl-dev libdb++-dev libtool autotools-dev autoconf libboost-all-dev bsdmainutils pkg-config
+RUN apt-get install -y git wget build-essential make g++  pip libboost-all-dev libssl-dev libdb++-dev libtool autotools-dev autoconf libboost-all-dev bsdmainutils pkg-config
 
 WORKDIR /tmp
 RUN wget --no-check-certificate https://github.com/bitcoin/bitcoin/archive/v$BITCOIN_DOWNLOAD_VERSION.tar.gz
@@ -25,6 +25,7 @@ RUN make install
 RUN whereis git
 
 RUN git clone  https://github.com/orisi/orisi.git
+RUN pip install -r orisi/requirements.txt
 RUN git clone git://github.com/Bitmessage/PyBitmessage.git
 RUN cp orisi/src/settings_local.py.example orisi/src/settings_local.py
 RUN mkdir .bitcoin
