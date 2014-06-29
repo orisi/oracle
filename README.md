@@ -36,7 +36,7 @@ https://github.com/boot2docker/windows-installer/releases
 https://github.com/boot2docker/osx-installer/releases
 
 
-After installing and running Boot2Docker:
+After installing and opening Terminal window:
 
 ```
 boot2docker init
