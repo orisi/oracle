@@ -1,0 +1,11 @@
+version: v1beta1
+containers:
+  - name: zenoracle1
+    image: 83tb/zenoracles
+    command: ['nc', '-p', '8333', '-l', '-l']
+    ports:
+      - name: nc-echo
+        hostPort: 8333
+        containerPort: 8333
+        
+        
