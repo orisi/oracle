@@ -82,6 +82,13 @@ cd zenoracles
 docker build -t zenoracle .
 ```
 
+## Running containers on Google Compute Engine
+
+https://developers.google.com/compute/docs/containers/container_vms
+
+It's very easy to run multiple on Google Compute engine because it supports yaml files that allows you to create containers upon instance creation using "--metadata-from-file google-container-manifest=containers.yaml" parameter to gcloud command.
+
+
 
 
 
