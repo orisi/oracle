@@ -1,6 +1,4 @@
-
-
-FROM ubuntu:12.04
+FROM phusion/baseimage:0.9.11
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
 
