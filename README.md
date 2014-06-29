@@ -107,8 +107,12 @@ https://docs.docker.com/installation/amazon/
 docker pull 83tb/zenoracles
 ```
 
-After getting the new image, restart the container.
-The code for Orisi itself will be automatically update upon every docker restart without fetching the image if needed.
+After getting the new image, restart the container. This will fetch every change in the docker container itself. But sometimes the container code will remain the same, you need "orisi code" updating mechanism.
+
+This can be implemented easily in the Dockerfile (RUN command).
+
+
+
 
 
 
