@@ -20,7 +20,7 @@ docker pull 83tb/zenoracles
 docker restart zenoracle
 ```
 
-* There must be an easy way to __build__ Orisi docker image __from source__
+* There must be an easy way to fastly __build__ Orisi docker image __from source__
 ```
 git clone https://github.com/83tb/zenoracles.git
 cd zenoracles
@@ -98,6 +98,8 @@ git clone https://github.com/83tb/zenoracles.git
 cd zenoracles
 docker build -t zenoracle .
 ```
+
+Whole process should take around 20 minutes. Your mileage may vary.
 
 ## Running Orisi Oracles on Google Compute Engine
 
