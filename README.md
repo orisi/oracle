@@ -7,7 +7,7 @@ This project exists because running Oracles should be easy:
 * There must be a way to test new code fast in multiple scenarios and enviroments, which makes Docker more aprioprate than full VMs.
 
 
-![ScreenShot](http://icons.iconarchive.com/icons/robsonbillponte/iRob/256/Drives-Server-icon.png)
+![ScreenShot](http://pixabay.com/static/uploads/photo/2013/08/30/09/29/the-nature-of-the-177250_640.jpg)
 
 ## Installation process
 
