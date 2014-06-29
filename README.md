@@ -20,6 +20,11 @@ docker pull 83tb/zenoracles
 docker restart zenoracle
 ```
 
+__There must be an oneliner to build Orisi docker image from source__
+```
+docker build -t zenoracle .
+```
+
 * There must be a way to test new code fast in multiple scenarios and enviroments, which makes Docker more aprioprate than full VMs.
 
 
