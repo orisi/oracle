@@ -2,7 +2,7 @@
 
 Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/orisi
 
-## Why Orisi <3 Docker ?
+## Why Orisi and Docker?
 
 * We need a way to separate dev-ops code from Oracle/Client codebase.
 * We need to be able to automatize and optimize build process
