@@ -13,6 +13,11 @@ docker run zenoracle
 ```
 docker pull 83tb/zenoracles
 ```
+* There must be a way to easily update core Orisi code without interacting/logging into Orisi node.
+```
+docker restart zenoracle
+```
+
 * There must be a way to test new code fast in multiple scenarios and enviroments, which makes Docker more aprioprate than full VMs.
 
 
