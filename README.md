@@ -67,7 +67,7 @@ So you have Docker installed. Now the simple and fastest way to have an oracle u
 ```
 docker pull 83tb/zenoracles
 ```
-This command will fetch an image of the pre-build docker container for Orisi.
+This command will fetch an image of the pre-build docker container for Orisi. Image weighs around ~47 MB. 
 
 ## Running Orisi
 
