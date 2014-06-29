@@ -1,5 +1,4 @@
-[ This repo is not yet ready to be tested ]
-[ You have been warned ]
+> This repo is not yet ready to be tested, you have been warned 
 
 # ZenOracles - Dockerized Orisi Oracles
 
@@ -45,8 +44,8 @@ If you're platform is Linux that probably means you can use docker natively:
 ##### Ubuntu - https://docs.docker.com/installation/ubuntulinux/
 ##### RedHat - https://docs.docker.com/installation/rhel/
 
-If you have docker installed alraedy you can skip to https://github.com/83tb/zenoracles/blob/master/README.md#installing-orisi-docker-image
-Installing Orisi Docker Image
+If you have docker installed alraedy you can go straight to[Installing Orisi Docker Image](https://github.com/83tb/zenoracles/blob/master/README.md#installing-orisi-docker-image)
+
 
 ### Install Boot2Docker (for MacOSX and Windows users)
 
@@ -72,7 +71,7 @@ boot2docker start
 boot2docker ssh
 ```
 
-You are on a docker-host machine.
+You have succesfully logged into docker-host machine.
 
 --
 
@@ -96,14 +95,14 @@ docker run zenoracle
 
 ## Building Orisi Docker Image from source
 
-If you want to have everything installed from sratch you can just download the Dockerfile from the source:
+If you want to have everything installed from scratch you can just download the Dockerfile from the source:
 ```
 git clone https://github.com/83tb/zenoracles.git
 cd zenoracles
 docker build -t zenoracle .
 ```
 
-Whole process should take around 20 minutes. Your mileage may vary.
+>Whole process should take around 20 minutes. Your mileage may vary.
 
 ## Running Orisi Oracles on Google Compute Engine
 
