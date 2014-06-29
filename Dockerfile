@@ -24,6 +24,8 @@ RUN make
 RUN make install
 RUN rm -rf /tmp/bitcoin
 
+RUN apt-get clean
+
 
 
 RUN git clone  https://github.com/orisi/orisi.git
