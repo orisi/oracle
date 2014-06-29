@@ -12,9 +12,11 @@ If you're platform is Linux that probably means you can use docker natively:
 #### Ubuntu - https://docs.docker.com/installation/ubuntulinux/
 #### RedHat - https://docs.docker.com/installation/rhel/
 
-If you want to test zenoracles on a non-linux machine you're going to need to run a host for docker - a tiny smart virtual machine that can handle dockers, eats only 27mb of your RAM, and it's super fast.
 
 ### Install Boot2Docker (for MacOSX and Windows users)
+
+If you want to test zenoracles on a non-linux machine you're going to need to run a host for docker - a tiny smart virtual machine that can handle dockers, eats only 27mb of your RAM, and it's super fast.
+
 
 Install process is very easy. It's just click and install.
 
