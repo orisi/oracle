@@ -4,9 +4,9 @@ Orisi is a distributed system of anonymous oracle nodes which safely validates d
 
 ## Why Orisi and Docker?
 
-* We need a way to separate dev-ops code from Oracle/Client codebase.
-* We need to be able to automatize and optimize build process
-* There must a simple and fast way to use it on multiple hardware or IAAS platforms. 
+* __We need a way to separate dev-ops code from Oracle/Client codebase__
+* __We need to be able to automatize and optimize build process__
+* __There must a simple and fast way to use it on multiple hardware or IAAS platforms__ 
 * __There must be a oneliner that runs whole Oracle__
 ```
 docker run zenoracle
@@ -15,7 +15,7 @@ docker run zenoracle
 ```
 docker pull 83tb/zenoracles
 ```
-* There must be a way to easily update core Orisi code without interacting/logging into Orisi node.
+* __There must be a way to easily update core Orisi code without interacting/logging into Orisi node__
 ```
 docker restart zenoracle
 ```
@@ -27,7 +27,7 @@ cd zenoracles
 docker build -t zenoracle .
 ```
 
-* There must be a way to test new code fast in multiple scenarios and enviroments, which makes Docker more aprioprate than full VMs.
+* __There must be a way to test new code fast in multiple scenarios and enviroments__
 
 
 ![ScreenShot](http://pixabay.com/static/uploads/photo/2014/04/05/11/32/stone-316225_640.jpg)
