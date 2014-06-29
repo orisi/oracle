@@ -20,8 +20,10 @@ docker pull 83tb/zenoracles
 docker restart zenoracle
 ```
 
-__There must be an oneliner to build Orisi docker image from source__
+__There must be an easy way to build Orisi docker image from source__
 ```
+git clone https://github.com/83tb/zenoracles.git
+cd zenoracles
 docker build -t zenoracle .
 ```
 
