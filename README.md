@@ -1,6 +1,9 @@
 [ This repo is not yet ready to be tested ]
 [ You have been warned ]
 
+
+![ScreenShot](http://upload.wikimedia.org/wikipedia/commons/b/b8/FullMeshNetwork.svg)
+
 # ZenOracles - Dockerized Orisi Oracles
 
 Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/orisi
@@ -31,6 +34,7 @@ docker build -t zenoracle .
 ```
 
 * There must be a way to __deploy__ and test new code fast in __multiple scenarios and enviroments__
+
 
 
 ![ScreenShot](http://pixabay.com/static/uploads/photo/2014/04/05/11/32/stone-316225_640.jpg)
