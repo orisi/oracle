@@ -26,6 +26,8 @@ If you're platform is Linux that probably means you can use docker natively:
 ##### Ubuntu - https://docs.docker.com/installation/ubuntulinux/
 ##### RedHat - https://docs.docker.com/installation/rhel/
 
+If you have docker installed alraedy you can skip to https://github.com/83tb/zenoracles/blob/master/README.md#installing-orisi-docker-image
+Installing Orisi Docker Image
 
 ### Install Boot2Docker (for MacOSX and Windows users)
 
