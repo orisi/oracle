@@ -1,9 +1,6 @@
 [ This repo is not yet ready to be tested ]
 [ You have been warned ]
 
-
-![ScreenShot](http://upload.wikimedia.org/wikipedia/commons/b/b8/FullMeshNetwork.svg)
-
 # ZenOracles - Dockerized Orisi Oracles
 
 Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/orisi
@@ -139,7 +136,7 @@ This can be implemented easily in the Dockerfile (RUN command)
 Thanks to this trick you're going to ONLY need to send "restart signal" to your containers.
 
 
-
+![ScreenShot](http://upload.wikimedia.org/wikipedia/commons/b/b8/FullMeshNetwork.svg)
 
 
 
