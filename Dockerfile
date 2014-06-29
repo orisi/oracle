@@ -22,7 +22,7 @@ RUN ./autogen.sh
 RUN ./configure --disable-wallet
 RUN make
 RUN make install
-RUN rm -rf /tmp/bitcoin
+
 
 RUN apt-get clean
 
@@ -34,6 +34,7 @@ RUN git clone git://github.com/Bitmessage/PyBitmessage.git
 RUN cp orisi/src/settings_local.py.example orisi/src/settings_local.py
 RUN mkdir .bitcoin
 RUN touch .bitcoin/bitcoin.conf
+
 
 ENV BTCRPC "openssl rand -hex 32"
 RUN echo rpcuser=bitrpc >> .bitcoin/bitcoin.conf
