@@ -101,6 +101,15 @@ gcloud compute instances create orisi1 --image projects/google-containers/global
 
 https://docs.docker.com/installation/amazon/
 
+## Updating your docker containers
+
+```
+docker pull 83tb/zenoracles
+```
+
+After getting the new image, restart the container.
+The code for Orisi itself will be automatically update upon every docker restart without fetching the image if needed.
+
 
 
 
