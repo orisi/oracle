@@ -90,6 +90,11 @@ It's very easy to run multiple on Google Compute engine because it supports yaml
 
 
 
+```
+gcloud compute instances create orisi1 --image projects/google-containers/global/images/container-vm-v20140522 --metadata-from-file google-container-manifest=containers.yaml --zone europe-west1-b --machine-type n1-standard-1 --tags=http-server
+
+```
+
 
 
 
