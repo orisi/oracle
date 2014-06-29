@@ -9,7 +9,7 @@ This project exists because running Orisi Oracles should be easy:
 ```
 docker run zenoracle
 ```
-* There must be a oneliner that build whole Oracle image from sources 
+* __There must be a oneliner to fetch the newest image__
 ```
 docker pull 83tb/zenoracles
 ```
