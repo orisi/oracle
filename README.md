@@ -95,6 +95,10 @@ gcloud compute instances create orisi1 --image projects/google-containers/global
 
 ```
 
+## Running Orisi Oracles on AWS
+
+https://docs.docker.com/installation/amazon/
+
 
 
 
