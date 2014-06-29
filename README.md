@@ -1,6 +1,8 @@
 # ZenOracles - Dockerized Orisi Oracles
 
 This project exists because running Oracles should be easy:
+
+* We need to be able to optimize build process
 * There must a simple and fast way to use it on every possible hardware or IAAS platform. 
 * There must be a oneliner that runs whole Oracle
 ```
