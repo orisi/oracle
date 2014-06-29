@@ -9,7 +9,7 @@ This project exists because running Orisi Oracles should be easy:
 ```
 docker run zenoracle
 ```
-* __There must be a oneliner to fetch the newest image__
+* __There must be an oneliner to fetch the newest image__
 ```
 docker pull 83tb/zenoracles
 ```
@@ -94,7 +94,7 @@ docker build -t zenoracle .
 
 https://developers.google.com/compute/docs/containers/container_vms
 
-It's very easy to run multiple on Google Compute engine because it supports yaml files that allows you to create containers upon instance creation using "--metadata-from-file google-container-manifest=containers.yaml" parameter to gcloud command.
+It's very easy to run multiple Orisi nodes at the same time, or even a whole test set of Oracles and Clients using Google Compute engine because it supports special yaml files that allows you to create containers upon instance creation using "--metadata-from-file google-container-manifest=containers.yaml" parameter (it's a parameter to a gcloud command).
 
 
 
