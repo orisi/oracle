@@ -1,4 +1,4 @@
-# ZenOracles - docker build of Orisi Oracles
+# ZenOracles - Dockerized Orisi Oracles
 
 This project exists because running Oracles should be easy:
 * There must a simple and fast way to use it on every possible hardware or IAAS platform. 
@@ -9,15 +9,14 @@ This project exists because running Oracles should be easy:
 
 ![ScreenShot](http://icons.iconarchive.com/icons/robsonbillponte/iRob/256/Drives-Server-icon.png)
 
-
 ## Installation process
 
 ### Linux
 
 If you're platform is Linux that probably means you can use docker natively:
 
-#### Ubuntu - https://docs.docker.com/installation/ubuntulinux/
-#### RedHat - https://docs.docker.com/installation/rhel/
+##### Ubuntu - https://docs.docker.com/installation/ubuntulinux/
+##### RedHat - https://docs.docker.com/installation/rhel/
 
 
 ### Install Boot2Docker (for MacOSX and Windows users)
