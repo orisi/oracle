@@ -82,7 +82,7 @@ cd zenoracles
 docker build -t zenoracle .
 ```
 
-## Running containers on Google Compute Engine
+## Running Orisi Oracles on Google Compute Engine
 
 https://developers.google.com/compute/docs/containers/container_vms
 
