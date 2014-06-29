@@ -47,6 +47,8 @@ EXPOSE     8333 8444
 # Config
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
+ADD supervisord.conf ./zenoracles/supervisord.conf
+
 RUN mkdir .config
 RUN mkdir .config/PyBitmessage
 
