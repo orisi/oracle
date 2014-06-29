@@ -48,7 +48,7 @@ EXPOSE     8333 8444
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-ADD bitcoind ./bitcoin/bin/$(getconf LONG_BIT)/bitcoind 
+RUN cp ./bitcoin/bin/$(getconf LONG_BIT)/bitcoind /usr/bin/
 
 RUN mkdir .config
 RUN mkdir .config/PyBitmessage
