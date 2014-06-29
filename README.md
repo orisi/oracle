@@ -131,7 +131,7 @@ docker pull 83tb/zenoracles
 After getting the new image, restart the container. This will fetch every change in the docker container itself. But sometimes the container code will remain the same, you need "orisi code" updating mechanism.
 
 This can be implemented easily in the Dockerfile (RUN command)
-Thanks to this trick you're going to need to send "restart signal" only to your containers.
+Thanks to this trick you're going to ONLY need to send "restart signal" to your containers.
 
 
 
