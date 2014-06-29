@@ -43,12 +43,11 @@ RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 
 EXPOSE     8333 8444
 
-
+# Config
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
 RUN mkdir .config
 RUN mkdir .config/PyBitmessage
-
 
 RUN echo daemon = true >> .config/PyBitmessage/keys.dat
 RUN echo apienabled = true >> .config/PyBitmessage/keys.dat
@@ -58,11 +57,5 @@ RUN echo apiusername = bitrpc >> .config/PyBitmessage/keys.dat
 ENV BMPW "openssl rand -hex 32"
 RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
-
-
-RUN mkdir /var/run/sshd
-RUN echo 'root:screencast' |chpasswd
-
-
 
 CMD ["/usr/bin/supervisord"]
