@@ -47,7 +47,7 @@ EXPOSE     8333 8444
 # Config
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
-ADD supervisord.conf ./zenoracles/supervisord.conf
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN mkdir .config
 RUN mkdir .config/PyBitmessage
@@ -61,4 +61,4 @@ ENV BMPW "openssl rand -hex 32"
 RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
-CMD ["/usr/bin/supervisord", "-c zenoracles/supervisord.conf"]
+CMD ["/usr/bin/supervisord"]
