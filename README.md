@@ -1,5 +1,12 @@
 # ZenOracles - docker build of Orisi Oracles
 
+This project exists because running Oracles should be easy:
+* There must a simple and fast way to use it on every possible hardware or IAAS platform. 
+* There must be a oneliner that runs whole Oracle
+* There must be a oneliner that build whole Oracle image from sources 
+* There must be a way to test new code fast in multiple scenarios and enviroments, which makes Docker more aprioprate than full VMs.
+
+
 ![ScreenShot](http://icons.iconarchive.com/icons/robsonbillponte/iRob/256/Drives-Server-icon.png)
 
 
