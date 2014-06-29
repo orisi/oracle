@@ -31,10 +31,31 @@ You are on a docker-host machine.
 
 --
 
-So you have Docker installed. Now the simple and fastest way to have an oracle up and running is to do
+So you have Docker installed. Now the simple and fastest way to have an oracle up and running is to fetch Orisi image and run it.
+
+
+Installing Orisi Docker Image
 
 docker pull 83tb/zenoracles
-docker 
+
+This command will fetch an image of the pre-build docker container for Orisi.
+
+If you want to have everything installed from sratch you can just download the Dockerfile from the source:
+
+git clone https://github.com/83tb/zenoracles.git
+cd zenoracles
+docker build -t zenoracle .
+
+Running Orisi
+
+docker run zenoracle
+
+
+
+
+
+
+
 
 
 
