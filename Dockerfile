@@ -59,14 +59,15 @@ RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
 
+RUN mkdir /var/run/sshd
+RUN echo 'root:screencast' |chpasswd
+
+EXPOSE 22
 
 CMD python PyBitmessage/src/bitmessagemain.py > /dev/null &
 CMD bitcoin/bin/$(getconf LONG_BIT)/bitcoind -connect=127.0.0.1 &
 
 CMD python orisi/src/run_oracle.py
 
-RUN mkdir /var/run/sshd
-RUN echo 'root:screencast' |chpasswd
 
-EXPOSE 22
 CMD    ["/usr/sbin/sshd", "-D"]
