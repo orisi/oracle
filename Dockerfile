@@ -36,8 +36,9 @@ RUN echo rpcuser=bitrpc >> .bitcoin/bitcoin.conf
 RUN echo rpcpassword=$BTCRPC >> .bitcoin/bitcoin.conf
 RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 
+EXPOSE     8333
 
-RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
+#RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
 RUN mkdir .config
 RUN mkdir .config/PyBitmessage
@@ -51,6 +52,7 @@ RUN echo apiusername = bitrpc >> .config/PyBitmessage/keys.dat
 ENV BMPW "openssl rand -hex 32"
 RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
+
 
 
 CMD python PyBitmessage/src/bitmessagemain.py > /dev/null &
