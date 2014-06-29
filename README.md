@@ -118,6 +118,8 @@ gcloud compute instances create orisi1 --image projects/google-containers/global
 
 ## Running Orisi Oracles on AWS
 
+Just run docker host optimized image, and from this point - the process is the same as described in this document.
+
 https://docs.docker.com/installation/amazon/
 
 ## Updating your Orisi containers
