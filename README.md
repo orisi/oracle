@@ -1,3 +1,5 @@
+[ This repo is not yet ready to be tested ]
+
 # ZenOracles - Dockerized Orisi Oracles
 
 Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/orisi
