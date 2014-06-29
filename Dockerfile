@@ -24,8 +24,9 @@ RUN ./autogen.sh
 RUN ./configure --disable-wallet
 RUN make
 RUN make install
+RUN rm -rf /tmp/bitcoin
 
-RUN whereis git
+
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN pip install -r orisi/requirements.txt
