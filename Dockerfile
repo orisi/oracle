@@ -61,4 +61,4 @@ ENV BMPW "openssl rand -hex 32"
 RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
-CMD ["/usr/bin/supervisord -c zenoracles/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-c zenoracles/supervisord.conf"]
