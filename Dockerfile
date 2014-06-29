@@ -39,8 +39,7 @@ RUN echo rpcuser=bitrpc >> .bitcoin/bitcoin.conf
 RUN echo rpcpassword=$BTCRPC >> .bitcoin/bitcoin.conf
 RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 
-EXPOSE     8333
-EXPOSE     8444
+EXPOSE     8333 8444 22
 
 
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
@@ -62,12 +61,6 @@ RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 RUN mkdir /var/run/sshd
 RUN echo 'root:screencast' |chpasswd
 
-EXPOSE 22
-
-CMD python PyBitmessage/src/bitmessagemain.py > /dev/null &
-CMD bitcoin/bin/$(getconf LONG_BIT)/bitcoind -connect=127.0.0.1 &
-
-CMD python orisi/src/run_oracle.py
 
 
-CMD    ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/bin/supervisord"]
