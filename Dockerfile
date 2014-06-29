@@ -31,6 +31,7 @@ RUN apt-get clean
 RUN git clone  https://github.com/orisi/orisi.git
 RUN pip install -r orisi/requirements.txt
 RUN git clone git://github.com/Bitmessage/PyBitmessage.git
+RUN git clone https://github.com/83tb/zenoracles.git
 RUN cp orisi/src/settings_local.py.example orisi/src/settings_local.py
 RUN mkdir .bitcoin
 RUN touch .bitcoin/bitcoin.conf
@@ -58,4 +59,4 @@ ENV BMPW "openssl rand -hex 32"
 RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord -c zenoracles/supervisord.conf"]
