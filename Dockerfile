@@ -10,6 +10,9 @@ ENV BITCOIN_DOWNLOAD_MD5_CHECKSUM 7a9c14c09b04e3e37d703fbfe5c3b1e2
 RUN apt-get update
 RUN apt-get install -y git wget build-essential make g++  python-pip libboost-all-dev libssl-dev libdb++-dev libtool autotools-dev autoconf libboost-all-dev bsdmainutils pkg-config
 
+RUN apt-get install -y openssh-server
+
+
 WORKDIR /tmp
 RUN wget --no-check-certificate https://github.com/bitcoin/bitcoin/archive/v$BITCOIN_DOWNLOAD_VERSION.tar.gz
 
@@ -62,3 +65,8 @@ CMD bitcoin/bin/$(getconf LONG_BIT)/bitcoind -connect=127.0.0.1 &
 
 CMD python orisi/src/run_oracle.py
 
+RUN mkdir /var/run/sshd
+RUN echo 'root:screencast' |chpasswd
+
+EXPOSE 22
+CMD    ["/usr/sbin/sshd", "-D"]
