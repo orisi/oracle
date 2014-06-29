@@ -3,7 +3,13 @@
 This project exists because running Oracles should be easy:
 * There must a simple and fast way to use it on every possible hardware or IAAS platform. 
 * There must be a oneliner that runs whole Oracle
+```
+docker run zenoracle
+```
 * There must be a oneliner that build whole Oracle image from sources 
+```
+docker pull 83tb/zenoracles
+```
 * There must be a way to test new code fast in multiple scenarios and enviroments, which makes Docker more aprioprate than full VMs.
 
 
@@ -59,16 +65,21 @@ docker pull 83tb/zenoracles
 ```
 This command will fetch an image of the pre-build docker container for Orisi.
 
+## Running Orisi
+
+```
+docker run zenoracle
+```
+
+## Building Orisi Docker Image from source
+
 If you want to have everything installed from sratch you can just download the Dockerfile from the source:
 ```
 git clone https://github.com/83tb/zenoracles.git
 cd zenoracles
 docker build -t zenoracle .
 ```
-Running Orisi
-```
-docker run zenoracle
-```
+
 
 
 
