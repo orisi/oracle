@@ -1,8 +1,8 @@
-> This repo is not yet ready to be tested, you have been warned 
+> work in progress, use Vagrant install for now
 
 # ZenOracles - Dockerized Orisi Oracles
 
-Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/orisi
+Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
 ## Why Orisi and Docker?
 
@@ -15,7 +15,7 @@ docker run zenoracle
 ```
 * There must be an __oneliner__ to __fetch__ the newest image
 ```
-docker pull 83tb/zenoracles
+docker pull orisi/zenoracles
 ```
 * There must be a way to easily __update core Orisi code__ without interacting/logging into Orisi node
 ```
@@ -24,7 +24,7 @@ docker restart zenoracle
 
 * There must be an easy way to fastly __build__ Orisi docker image __from source__
 ```
-git clone https://github.com/83tb/zenoracles.git
+git clone git@github.com:orisi/zenoracles.git
 cd zenoracles
 docker build -t zenoracle .
 ```
@@ -44,7 +44,7 @@ If you're platform is Linux that probably means you can use docker natively:
 ##### Ubuntu - https://docs.docker.com/installation/ubuntulinux/
 ##### RedHat - https://docs.docker.com/installation/rhel/
 
-If you have docker installed alraedy you can go straight to[Installing Orisi Docker Image](https://github.com/83tb/zenoracles/blob/master/README.md#installing-orisi-docker-image)
+If you have docker installed alraedy you can go straight to[Installing Orisi Docker Image](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
 
 
 ### Install Boot2Docker (for MacOSX and Windows users)
@@ -97,7 +97,7 @@ docker run zenoracle
 
 If you want to have everything installed from scratch you can just download the Dockerfile from the source:
 ```
-git clone https://github.com/83tb/zenoracles.git
+git clone https://github.com/orisi/zenoracles.git
 cd zenoracles
 docker build -t zenoracle .
 ```
