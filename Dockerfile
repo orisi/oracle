@@ -63,4 +63,4 @@ RUN echo "apipassword = $BMPW" >> .config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
 #CMD ["/usr/bin/supervisord"]
-CMD ["python PyBitmessage/src/bitmessagemain.py"]
+CMD ["python /tmp/bitcoin/PyBitmessage/src/bitmessagemain.py"]
