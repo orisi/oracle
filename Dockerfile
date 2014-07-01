@@ -48,8 +48,7 @@ EXPOSE     8333 8444
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-ADD bitmessagemain.py /tmp/bitcoin/PyBitMessage/src/bitmessagemain.py
-RUN mkdir .config
+
 RUN mkdir .config/PyBitmessage
 
 RUN echo daemon = true >> .config/PyBitmessage/keys.dat
