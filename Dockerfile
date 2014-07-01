@@ -50,12 +50,16 @@ RUN echo 'root:screencast' |chpasswd
 # Config
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
+
+
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN mkdir /var/run/sshd
 
 
 RUN mkdir /root/.config
 RUN mkdir /root/.config/PyBitmessage
+RUN python PyBitmessage/src/bitmessagemain.py 
+
 
 RUN echo daemon = true >> /root/.config/PyBitmessage/keys.dat
 RUN echo apienabled = true >> /root/.config/PyBitmessage/keys.dat
