@@ -48,6 +48,8 @@ EXPOSE     8333 8444
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+RUN mkdir /var/run/sshd
+
 
 RUN mkdir .config
 RUN mkdir .config/PyBitmessage
