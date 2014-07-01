@@ -49,6 +49,7 @@ EXPOSE     8333 8444
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+RUN mkdir .config
 RUN mkdir .config/PyBitmessage
 
 RUN echo daemon = true >> .config/PyBitmessage/keys.dat
