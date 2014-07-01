@@ -38,8 +38,8 @@ RUN touch .bitcoin/bitcoin.conf
 
 
 ENV BTCRPC "openssl rand -hex 32"
-RUN echo rpcuser=bitrpc >> .bitcoin/bitcoin.conf
-RUN echo rpcpassword=$BTCRPC >> .bitcoin/bitcoin.conf
+RUN echo rpcuser=bitrpc >> /root/.bitcoin/bitcoin.conf
+RUN echo rpcpassword=$BTCRPC >> /root/.bitcoin/bitcoin.conf
 RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 
 EXPOSE     8333 8444
