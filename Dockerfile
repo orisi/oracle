@@ -42,7 +42,8 @@ RUN echo rpcuser=bitrpc >> .bitcoin/bitcoin.conf
 RUN echo rpcpassword=$BTCRPC >> .bitcoin/bitcoin.conf
 RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 
-EXPOSE     8333 8444 22
+EXPOSE     8333 8444
+EXPOSE 22
 
 # Config
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
