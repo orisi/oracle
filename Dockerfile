@@ -54,16 +54,16 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN mkdir /var/run/sshd
 
 
-RUN mkdir $HOME/.config
-RUN mkdir $HOME/.config/PyBitmessage
+RUN mkdir /root/.config
+RUN mkdir /root/.config/PyBitmessage
 
-RUN echo daemon = true >> $HOME/.config/PyBitmessage/keys.dat
-RUN echo apienabled = true >> $HOME/.config/PyBitmessage/keys.dat
-RUN echo apiport = 8442 >> $HOME/.config/PyBitmessage/keys.dat
-RUN echo apiinterface = 127.0.0.1 >> $HOME/.config/PyBitmessage/keys.dat
-RUN echo apiusername = bitrpc >> $HOME/.config/PyBitmessage/keys.dat
+RUN echo daemon = true >> /root/PyBitmessage/keys.dat
+RUN echo apienabled = true >> /root/.config/PyBitmessage/keys.dat
+RUN echo apiport = 8442 >> /root/.config/PyBitmessage/keys.dat
+RUN echo apiinterface = 127.0.0.1 >> /root/.config/PyBitmessage/keys.dat
+RUN echo apiusername = bitrpc >> /root/.config/PyBitmessage/keys.dat
 ENV BMPW "openssl rand -hex 32"
-RUN echo "apipassword = $BMPW" >> $HOME/.config/PyBitmessage/keys.dat
+RUN echo "apipassword = $BMPW" >> /root/.config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
 #CMD ["/usr/bin/supervisord"]
