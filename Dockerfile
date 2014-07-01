@@ -45,6 +45,8 @@ RUN echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> src/settings_local.py
 EXPOSE     8333 8444
 EXPOSE 22
 
+RUN echo 'root:screencast' |chpasswd
+
 # Config
 #RUN python PyBitmessage/src/bitmessagemain.py > /dev/null 
 
