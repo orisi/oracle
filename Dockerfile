@@ -60,7 +60,7 @@ RUN mkdir /root/.config
 RUN mkdir /root/.config/PyBitmessage
 RUN python PyBitmessage/src/bitmessagemain.py 
 
-
+RUN echo "[bitmessagesettings]" >> /root/.config/PyBitmessage/keys.dat
 RUN echo daemon = true >> /root/.config/PyBitmessage/keys.dat
 RUN echo apienabled = true >> /root/.config/PyBitmessage/keys.dat
 RUN echo apiport = 8442 >> /root/.config/PyBitmessage/keys.dat
