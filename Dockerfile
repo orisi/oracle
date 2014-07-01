@@ -57,7 +57,7 @@ RUN mkdir /var/run/sshd
 RUN mkdir /root/.config
 RUN mkdir /root/.config/PyBitmessage
 
-RUN echo daemon = true >> /root/PyBitmessage/keys.dat
+RUN echo daemon = true >> /root/.config/PyBitmessage/keys.dat
 RUN echo apienabled = true >> /root/.config/PyBitmessage/keys.dat
 RUN echo apiport = 8442 >> /root/.config/PyBitmessage/keys.dat
 RUN echo apiinterface = 127.0.0.1 >> /root/.config/PyBitmessage/keys.dat
