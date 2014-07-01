@@ -61,7 +61,7 @@ RUN mkdir /root/.config/PyBitmessage
 RUN python PyBitmessage/src/bitmessagemain.py 
 
 
-RUN cp zenoracles/keys.dat /root/.config/PyBitmessage/
+RUN cp /tmp/bitcoin/zenoracles/keys.dat /root/.config/PyBitmessage/
 
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
