@@ -70,6 +70,7 @@ RUN echo "apipassword = $BMPW" >> /root/.config/PyBitmessage/keys.dat
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
+RUN chmod 777 /var/run/screen
 
 CMD ["/usr/bin/supervisord"]
 #CMD    ["/usr/sbin/sshd", "-D"]
