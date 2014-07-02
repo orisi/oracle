@@ -37,8 +37,8 @@ RUN mkdir /root/.bitcoin
 RUN touch /root/.bitcoin/bitcoin.conf
 
 
-RUN BTCRPC=`openssl rand -hex 32`
-RUN BMPW=`openssl rand -hex 32`
+ENV BTCRPC `openssl rand -hex 32`
+ENV BMPW `openssl rand -hex 32`
 
 
 
