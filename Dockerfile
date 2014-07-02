@@ -37,8 +37,8 @@ RUN mkdir /root/.bitcoin
 RUN touch /root/.bitcoin/bitcoin.conf
 
 
-BTCRPC=`openssl rand -hex 32`
-BMPW=`openssl rand -hex 32`
+RUN BTCRPC=`openssl rand -hex 32`
+RUN BMPW=`openssl rand -hex 32`
 
 
 
@@ -66,8 +66,8 @@ RUN python PyBitmessage/src/bitmessagemain.py
 
 
 RUN cp /tmp/bitcoin/zenoracles/keys.dat /root/.config/PyBitmessage/
-echo "apipassword = $BMPW" >> /root/.config/PyBitmessage/keys.dat
-echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
+RUN echo "apipassword = $BMPW" >> /root/.config/PyBitmessage/keys.dat
+RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 RUN echo BITMESSAGE_PASSWORD = \"$BMPW\" >> src/settings_local.py
 
 
