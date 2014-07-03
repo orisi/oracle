@@ -11,7 +11,7 @@ RUN chmod 777 /var/run/screen
 WORKDIR /tmp
 
 RUN git clone  https://github.com/orisi/orisi.git
-RUN ./orisi/install.sh
+RUN ./orisi/docker_install.sh
 
 
 CMD ["/usr/bin/supervisord"]
