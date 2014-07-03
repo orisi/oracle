@@ -3,7 +3,7 @@ MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
 
 RUN apt-get update
-RUN apt-get install -y git screen python-pip joe openssh-server supervisord
+RUN apt-get install -y git screen python-pip joe openssh-server supervisor
 RUN echo 'root:screencast' |chpasswd
 RUN chmod 777 /var/run/screen
 RUN mkdir /var/run/sshd
