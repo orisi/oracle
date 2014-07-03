@@ -9,7 +9,7 @@ RUN echo 'root:screencast' |chpasswd
 RUN chmod 777 /var/run/screen
 RUN mkdir /var/run/sshd
 
-WORKDIR /tmp
+WORKDIR /root
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN git clone  https://github.com/orisi/zenoracles.git
@@ -20,7 +20,7 @@ RUN ./orisi/docker_install.sh
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 22 8333 8444 2523
-RUN cp -R .config /root/
+#RUN cp -R .config /root/
 
 CMD ["/usr/bin/supervisord"]
 #CMD    ["/usr/sbin/sshd", "-D"]
