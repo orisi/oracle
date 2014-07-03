@@ -11,9 +11,11 @@ RUN mkdir /var/run/sshd
 WORKDIR /tmp
 
 RUN git clone  https://github.com/orisi/orisi.git
+RUN git clone  https://github.com/orisi/zenoracles.git
 RUN chmod +x ./orisi/docker_install.sh
 RUN ./orisi/docker_install.sh
 
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 22 8333 8444 2523
 
 
