@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install -y git screen python-pip joe openssh-server
 RUN echo 'root:screencast' |chpasswd
 RUN chmod 777 /var/run/screen
-
+RUN mkdir /var/run/sshd
 
 WORKDIR /tmp
 
