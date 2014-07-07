@@ -2,6 +2,8 @@ FROM ubuntu:12.04
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
 
+ENV ORACLE_ADDRESS "BM-2cUQCkgULn6CyQxuCkn57LvAsXw3xiBZBY"
+
 RUN apt-get update
 RUN apt-get install -y git screen python-pip joe openssh-server supervisor 
 RUN apt-get install -y build-essential make g++ libtool autotools-dev autoconf python-dev
