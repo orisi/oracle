@@ -28,6 +28,6 @@ RUN chmod +x /root/zenoracles/initial_oracle_run.sh
 RUN chmod +x /root/zenoracles/initial_bitcoind_run.sh
 RUN chmod +x /root/zenoracles/docker_runoracle.sh
 
-CMD    ["/root/zenoracles/docker_runoracle.sh"]
+#CMD    ["/root/zenoracles/docker_runoracle.sh"]
 
-#CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord"]
