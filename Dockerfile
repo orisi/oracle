@@ -2,7 +2,7 @@ FROM ubuntu:12.04
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
 
-ENV ORACLE_ADDRESS "BM-2cUQCkgULn6CyQxuCkn57LvAsXw3xiBZBY"
+
 
 RUN apt-get update
 RUN apt-get install -y git screen python-pip joe openssh-server supervisor 
@@ -29,6 +29,7 @@ RUN chmod +x /root/zenoracles/initial_bitmesg_run.sh
 RUN chmod +x /root/zenoracles/initial_oracle_run.sh
 RUN chmod +x /root/zenoracles/initial_bitcoind_run.sh
 RUN chmod +x /root/zenoracles/docker_runoracle.sh
+ENV ORACLE_ADDRESS BM-2cUQCkgULn6CyQxuCkn57LvAsXw3xiBZBY
 
 #CMD    ["/root/zenoracles/docker_runoracle.sh"]
 
