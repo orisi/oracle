@@ -2,8 +2,7 @@
 
 
 PYTHON_EXEC=python2.7
-HOME="/root"
-DIR="/root"
+
 
 screen -d -m python PyBitmessage/src/bitmessagemain.py
 

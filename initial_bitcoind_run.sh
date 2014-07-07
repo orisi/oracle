@@ -1,8 +1,7 @@
 #!/bin/bash
 
 PYTHON_EXEC=python2.7
-HOME="/root"
-DIR="/root"
+
 
 
 if [ -z $(pgrep bitcoind) ]

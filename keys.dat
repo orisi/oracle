@@ -38,5 +38,5 @@ apienabled = true
 apiport = 2523
 apiinterface = 127.0.0.1
 apiusername = bitrpc
-apipassword = "openssl rand -hex 32"
+apipassword = "517858afdd09cb2fcdae7a74bb9443feb1499d5c823fba8a983c7bf539b0bb26"
 
