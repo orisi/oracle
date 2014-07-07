@@ -30,6 +30,8 @@ RUN chmod +x ./zenoracles/initial_oracle_run.sh
 RUN chmod +x ./zenoracles/initial_bitcoind_run.sh
 RUN chmod +x ./zenoracles/docker_runoracle.sh
 
+RUN cp ./zenoracles/initial* /usr/bin/
+
 RUN echo "ORACLE_ADDRESS=\"18674hp8BBARJfmvqBwBvLs1EWByaerk7J\"" >> ./orisi/src/settings_local.py
 #CMD    ["./zenoracles/docker_runoracle.sh"]
 

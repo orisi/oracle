@@ -2,7 +2,7 @@
 
 
 PYTHON_EXEC=python2.7
-DIR=/root
+DIR=$HOME
 
 
 $PYTHON_EXEC $DIR/orisi/src/run_oracle.py $@
