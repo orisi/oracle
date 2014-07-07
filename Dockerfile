@@ -23,7 +23,7 @@ EXPOSE 22 8333 8444 2523
 #RUN cp -R .config /root/
 
 #CMD ["/usr/bin/supervisord"]
-RUN chmod + x /root/zenoracles/docker_runoracle.sh
+RUN chmod +x /root/zenoracles/docker_runoracle.sh
 
 CMD    ["/root/zenoracles/docker_runoracle.sh"]
 
