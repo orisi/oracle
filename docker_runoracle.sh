@@ -8,7 +8,7 @@ PYTHON_EXEC=python2.7
 HOME="/root"
 DIR="/root"
 
-screen -d - m python PyBitmessage/src/bitmessagemain.py 
+python PyBitmessage/src/bitmessagemain.py 
 
 if [ -z $(pgrep bitcoind) ]
 then
@@ -18,4 +18,4 @@ fi
 
 echo "running oracle"
 
-$PYTHON_EXEC $DIR/src/run_oracle.py $@
+$PYTHON_EXEC $DIR/orisi/src/run_oracle.py $@
