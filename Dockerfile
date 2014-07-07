@@ -15,9 +15,9 @@ WORKDIR /root
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN git clone  https://github.com/orisi/zenoracles.git
-RUN chmod +x ./zenoracles/install.sh
+RUN chmod +x ./zenoracles/docker_install.sh
 
-RUN ./zenoracles/install.sh
+RUN ./zenoracles/docker_install.sh
 
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
