@@ -22,6 +22,7 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 22 8333 8444 2523
 #RUN cp -R .config /root/
 
-CMD ["/usr/bin/supervisord"]
-#CMD    ["/usr/sbin/sshd", "-D"]
+#CMD ["/usr/bin/supervisord"]
+CMD    ["/root/zenoracles/docker_runoracle.sh"]
+
 
