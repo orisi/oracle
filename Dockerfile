@@ -22,11 +22,11 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 22 8333 8444 2523
 #RUN cp -R .config /root/
 
-#CMD ["/usr/bin/supervisord"]
+#
 RUN chmod +x /root/zenoracles/initial_bitmesg_run.sh
 RUN chmod +x /root/zenoracles/initial_oracle_run.sh
 RUN chmod +x /root/zenoracles/initial_bitcoind_run.sh
 
-CMD    ["/root/zenoracles/docker_runoracle.sh"]
+#CMD    ["/root/zenoracles/docker_runoracle.sh"]
 
-
+CMD ["/usr/bin/supervisord"]
