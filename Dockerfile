@@ -29,8 +29,8 @@ RUN chmod +x /root/zenoracles/initial_bitmesg_run.sh
 RUN chmod +x /root/zenoracles/initial_oracle_run.sh
 RUN chmod +x /root/zenoracles/initial_bitcoind_run.sh
 RUN chmod +x /root/zenoracles/docker_runoracle.sh
-ENV ORACLE_ADDRESS BM-2cUQCkgULn6CyQxuCkn57LvAsXw3xiBZBY
 
+RUN echo "ORACLE_ADDRESS=BM-2cUQCkgULn6CyQxuCkn57LvAsXw3xiBZBY" >> /root/orisi/src/settings_local.py
 #CMD    ["/root/zenoracles/docker_runoracle.sh"]
 
 CMD ["/usr/bin/supervisord"]
