@@ -1,9 +1,5 @@
 #!/bin/bash
 
-/usr/sbin/sshd -D
-
-
-
 PYTHON_EXEC=python2.7
 HOME="/root"
 DIR="/root"
