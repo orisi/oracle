@@ -33,6 +33,6 @@ RUN chmod +x ./zenoracles/docker_runoracle.sh
 RUN cp ./zenoracles/initial* /usr/bin/
 
 #RUN echo "ORACLE_ADDRESS=\"18674hp8BBARJfmvqBwBvLs1EWByaerk7J\"" >> ./orisi/src/settings_local.py
-#CMD    ["./zenoracles/docker_runoracle.sh"]
+CMD    ["./zenoracles/docker_runoracle.sh"]
 
-CMD ["/usr/bin/supervisord"]
+#CMD ["/usr/bin/supervisord"]
