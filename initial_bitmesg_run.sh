@@ -1,4 +1,4 @@
 #!/bin/bash
-screen -d -m python PyBitmessage/src/bitmessagemain.py
+screen -d -m python /root/PyBitmessage/src/bitmessagemain.py
 
 
