@@ -1,5 +1,3 @@
-> work in progress, use Vagrant install for now
-
 # ZenOracles - Dockerized Orisi Oracles
 
 Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
@@ -11,7 +9,7 @@ Orisi is a distributed system of anonymous oracle nodes which safely validates d
 * There must a simple and fast way to use it on multiple __hardware__ or __IAAS__ platforms
 * There must be a __oneliner__ that __runs__ whole Oracle
 ```
-docker run zenoracle
+docker run orisi/zenoracles
 ```
 * There must be an __oneliner__ to __fetch__ the newest image
 ```
@@ -19,14 +17,14 @@ docker pull orisi/zenoracles
 ```
 * There must be a way to easily __update core Orisi code__ without interacting/logging into Orisi node
 ```
-docker restart zenoracle
+docker restart orisi/zenoracles
 ```
 
 * There must be an easy way to fastly __build__ Orisi docker image __from source__
 ```
 git clone git@github.com:orisi/zenoracles.git
 cd zenoracles
-docker build -t zenoracle .
+docker build -t zenoracles .
 ```
 
 * There must be a way to __deploy__ and test new code fast in __multiple scenarios and enviroments__
@@ -83,14 +81,14 @@ You have succesfully logged into docker-host machine.
 So you have Docker installed. Now the simple and fastest way to have an oracle up and running is to fetch Orisi image and run it.
 
 ```
-docker pull 83tb/zenoracles
+docker pull orisi/zenoracles
 ```
-This command will fetch an image of the pre-build docker container for Orisi. Image weighs around ~47 MB. 
+This command will fetch an image of the pre-build docker container for Orisi. 
 
 ## Running Orisi
 
 ```
-docker run zenoracle
+docker run orisi/zenoracles
 ```
 
 ## Building Orisi Docker Image from source
