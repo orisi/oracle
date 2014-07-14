@@ -1,7 +1,7 @@
 FROM ubuntu:12.04
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
-
+VOLUME ["/root"]
 
 
 RUN apt-get update
@@ -11,7 +11,7 @@ RUN echo 'root:screencast' |chpasswd
 RUN chmod 777 /var/run/screen
 RUN mkdir /var/run/sshd
 
-VOLUME ["/root"]
+
 WORKDIR /root
 
 RUN git clone  https://github.com/orisi/orisi.git
