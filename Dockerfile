@@ -1,7 +1,7 @@
 FROM ubuntu:12.04
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
-VOLUME ["/root"]
+VOLUME ["/orisi"]
 
 
 RUN apt-get update
