@@ -13,6 +13,7 @@ RUN mkdir /var/run/sshd
 
 
 WORKDIR /orisi
+RUN cd /orisi/
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN git clone  https://github.com/orisi/zenoracles.git
