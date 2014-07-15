@@ -1,7 +1,7 @@
 FROM ubuntu:12.04
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
-VOLUME ["/orisi"]
+
 
 
 RUN apt-get update
@@ -12,8 +12,8 @@ RUN chmod 777 /var/run/screen
 RUN mkdir /var/run/sshd
 
 
-WORKDIR /orisi
-RUN cd /orisi/
+WORKDIR /root
+
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN git clone  https://github.com/orisi/zenoracles.git
