@@ -12,7 +12,7 @@ RUN chmod 777 /var/run/screen
 RUN mkdir /var/run/sshd
 
 
-WORKDIR /root
+WORKDIR /orisi
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN git clone  https://github.com/orisi/zenoracles.git
