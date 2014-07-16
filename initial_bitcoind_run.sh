@@ -4,7 +4,7 @@ PYTHON_EXEC=python2.7
 HOME=/disk
 DIR=$HOME
 
-/usr/bin/screen -d -m /usr/bin/python /root/PyBitmessage/src/bitmessagemain.py
+/usr/bin/screen -d -m /usr/bin/python /disk/PyBitmessage/src/bitmessagemain.py
 
 if [ -z $(pgrep bitcoind) ]
 then
