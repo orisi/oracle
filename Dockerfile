@@ -27,7 +27,7 @@ EXPOSE 22 8333 8444 2523
 #RUN cp -R .config ./
 
 #
-RUN chmod +x ./zenoracles/initial_bitmesg_run.sh
+
 RUN chmod +x ./zenoracles/initial_oracle_run.sh
 RUN chmod +x ./zenoracles/initial_bitcoind_run.sh
 RUN chmod +x ./zenoracles/docker_runoracle.sh
