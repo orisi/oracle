@@ -17,7 +17,7 @@ WORKDIR /root
 
 RUN git clone  https://github.com/orisi/orisi.git
 RUN git clone  https://github.com/orisi/zenoracles.git
-RUN chmod +x ./orisi/docker_install.sh
+RUN chmod +x ./zenoracles/docker_install.sh
 
 RUN ./zenoracles/docker_install.sh
 
