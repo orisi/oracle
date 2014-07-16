@@ -1,5 +1,7 @@
 #!/bin/bash
 
+HOME=/disk
+
 /usr/sbin/sshd -D
 bash $HOME/zenoracles/initial_bitmesg_run.sh 
 sleep 10
