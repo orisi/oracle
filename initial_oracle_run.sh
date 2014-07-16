@@ -2,7 +2,7 @@
 
 
 PYTHON_EXEC=python2.7
-HOME=/root
+HOME=/disk
 DIR=$HOME
 
 
