@@ -35,7 +35,7 @@ EXPOSE 22 8333 8444 2523
 
 RUN chmod +x /disk/zenoracles/initial_oracle_run.sh
 RUN chmod +x /disk/zenoracles/initial_bitcoind_run.sh
-RUN chmod +x /disk/zenoracles/docker_runoracle.sh
+
 
 
 
