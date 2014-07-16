@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PYTHON_EXEC=python2.7
-HOME=/root
+HOME=/disk
 DIR=$HOME
 
 /usr/bin/screen -d -m /usr/bin/python /root/PyBitmessage/src/bitmessagemain.py
