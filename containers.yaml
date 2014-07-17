@@ -3,37 +3,23 @@
 version: v1beta1
 containers:
   - name: zenoracle1
-    image: 83tb/zenoracles
+    image: orisi/zenoracles
     command: ['nc', '-p', '8333', '-l', '-l']
-    ports:
-      - name: nc-echo
-        hostPort: 8333
-        containerPort: 8333
-        
-        
 
+        
 version: v1beta1
 containers:
   - name: zenoracle2
-    image: 83tb/zenoracles
+    image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
-    ports:
-      - name: nc-echo
-        hostPort: 8333
-        containerPort: 8333
+
         
-        
-
-
-
+      
 version: v1beta1
 containers:
   - name: zenoracle3
-    image: 83tb/zenoracles
+    image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
-    ports:
-      - name: nc-echo
-        hostPort: 8333
-        containerPort: 8333
+
         
         
