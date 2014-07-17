@@ -7,12 +7,13 @@ RUN useradd docker
 RUN echo "docker:docker" | chpasswd
 RUN echo "docker ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
+RUN sudo apt-get update
+RUN sudo apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
 
 USER docker
 
 
-RUN sudo apt-get update
-RUN sudo apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
+
 RUN sudo apt-get install -y build-essential make g++ libtool autotools-dev autoconf python-dev
 RUN echo 'root:password' |chpasswd
 RUN sudo chmod 777 /var/run/screen
