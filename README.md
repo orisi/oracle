@@ -33,7 +33,18 @@ docker build -t zenoracles .
 
 ![ScreenShot](http://pixabay.com/static/uploads/photo/2014/04/05/11/32/stone-316225_640.jpg)
 
-## Installation process
+## Docker Installation process
+
+To run Oracle nodes as docker containers you're going to have to install docker package. 
+There are two ways to run Docker:
+
+- Native, using Linux
+- Booting Linux VM inside Windows or Macosx.
+
+Both ways are very easy, and will take you no more than 5 minutes.
+
+If you have docker installed alraedy you can go straight to[Installing Orisi Docker Image](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
+
 
 ### Linux
 
@@ -49,7 +60,13 @@ curl -s https://get.docker.io/ubuntu/ | sudo sh
 
 https://docs.docker.com/installation/rhel/
 
-If you have docker installed alraedy you can go straight to[Installing Orisi Docker Image](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
+#### Debian
+
+https://docs.docker.com/installation/debian/
+
+#### Centos
+
+https://docs.docker.com/installation/centos/
 
 
 ### Install Boot2Docker (for MacOSX and Windows users)
