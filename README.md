@@ -30,10 +30,6 @@ docker build -t zenoracles .
 * There must be a way to __deploy__ and test new code fast in __multiple scenarios and enviroments__
 
 
-
-![ScreenShot](http://pixabay.com/static/uploads/photo/2014/04/05/11/32/stone-316225_640.jpg)
-
-
 ## Docker Installation process
 
 To run Oracle nodes as docker containers you're going to have to install docker package. 
