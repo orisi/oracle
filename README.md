@@ -291,7 +291,11 @@ docker --selinux-enabled=true run orisi/zenoracles > /dev/null &
 ```
 
 
+## Errors
 
+If you see weird stuff like this:
+
+![ScreenShot](http://i.imgur.com/DMQZQXe.png)
 
 
 
