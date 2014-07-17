@@ -1,6 +1,11 @@
 # ZenOracles - Dockerized Orisi Oracles
 
-Orisi is a distributed system of anonymous oracle nodes which safely validates distributed contracts which use external state for their conditions. More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
+Smart contracts allows you to transform business logic, laws, and other rules into code. 
+Orisi is a platform that does smart contracts.
+Zenoracles project is a Docker/Container implementation of Orisi nodes.
+
+
+More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
 ## Why Orisi and Docker?
 
