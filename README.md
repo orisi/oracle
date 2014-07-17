@@ -122,11 +122,6 @@ This can be implemented easily in the Dockerfile (RUN command)
 Thanks to this trick you're going to ONLY need to send "restart signal" to your containers.
 
 
-### Docker vs Full VM
-
-So let's say you have a container image that is 1GB in size. If you wanted to use a Full VM, you would need to have 1GB times x number of VMs you want. With LXC and AuFS you can share the bulk of the 1.366 GB and if you have 1000 containers you still might only have a little over 1GB of space for the containers OS, assuming they are all running the same OS image.
-
-
 
 ## Why Orisi and Docker?
 
@@ -154,6 +149,13 @@ docker build -t zenoracles .
 ```
 
 * There must be a way to __deploy__ and test new code fast in __multiple scenarios and enviroments__
+
+
+### Docker vs Full VM
+
+So let's say you have a container image that is 1GB in size. If you wanted to use a Full VM, you would need to have 1GB times x number of VMs you want. With LXC and AuFS you can share the bulk of the 1.366 GB and if you have 1000 containers you still might only have a little over 1GB of space for the containers OS, assuming they are all running the same OS image.
+
+
 
 
 ## Running Orisi Oracles on Google Compute Engine
