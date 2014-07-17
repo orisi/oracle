@@ -102,7 +102,7 @@ You have succesfully logged into docker-host machine.
 
 ## Installing Orisi Docker Image
 
-![intro]("http://zenoracles.s3-eu-west-1.amazonaws.com/README/Screen%20Shot%202557-07-17%20at%2014.40.06.png")
+![intro](http://zenoracles.s3.amazonaws.com/README/skrin1.png)
 
 
 So you have Docker installed. Now the simple and fastest way to have an oracle up and running is to fetch Orisi image and run it.
