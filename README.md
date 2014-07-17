@@ -116,7 +116,7 @@ This command will fetch an image of the pre-build docker container for Orisi.
 ## Running Orisi
 
 ```
-docker run orisi/zenoracles
+docker run orisi/zenoracles > /dev/null &
 ```
 
 ## Building Orisi Docker Image from source
@@ -130,7 +130,7 @@ docker build -t zenoracle .
 
 >Whole process should take around 20 minutes. Your mileage may vary.
 
-## Running Orisi Oracles on Google Compute Engine
+### Running Orisi Oracles on Google Compute Engine
 
 https://developers.google.com/compute/docs/containers/container_vms
 
@@ -143,13 +143,13 @@ gcloud compute instances create orisi1 --image projects/google-containers/global
 
 ```
 
-## Running Orisi Oracles on AWS
+### Running Orisi Oracles on AWS
 
 Just run docker host optimized image, and from this point - the process is the same as described in this document.
 
 https://docs.docker.com/installation/amazon/
 
-## Updating your Orisi containers
+### Updating your Orisi containers
 
 ```
 docker pull 83tb/zenoracles
@@ -166,7 +166,7 @@ Thanks to this trick you're going to ONLY need to send "restart signal" to your 
 
 
 
-## Docker vs Full VM
+### Docker vs Full VM
 
 So let's say you have a container image that is 1GB in size. If you wanted to use a Full VM, you would need to have 1GB times x number of VMs you want. With LXC and AuFS you can share the bulk of the 1.366 GB and if you have 1000 containers you still might only have a little over 1GB of space for the containers OS, assuming they are all running the same OS image.
 
