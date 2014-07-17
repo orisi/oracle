@@ -87,20 +87,17 @@ https://github.com/boot2docker/windows-installer/releases
 https://github.com/boot2docker/osx-installer/releases
 
 
-## I have a terminal with docker command working. What now?
+## Bootdocker is running. Now what?
 
 ![ScreenShot](http://zenoracles.s3.amazonaws.com/README/skrin0.png)
 
+You need to initialize and start boot2docker, and then login
 
 ```
 boot2docker init
 boot2docker start
 boot2docker ssh
 ```
-
-You have succesfully logged into docker-host machine.
-
---
 
 
 
