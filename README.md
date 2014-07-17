@@ -174,6 +174,26 @@ You can use this command to check ip of the container to login via ssh or check 
    
 ```
 
+
+#### Restart container
+```
+docker restart trusting_bardeen
+```
+
+#### Start container
+```
+docker start trusting_bardeen
+```
+
+#### Stop container
+```
+docker stop trusting_bardeen
+```
+#### Erase container
+```
+docker rm trusting_bardeen
+```
+
 #### Stop all containers
 ```
 docker stop $(docker ps -a -q)
