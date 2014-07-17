@@ -3,7 +3,8 @@ MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
 RUN mkdir /disk
 
-
+RUN useradd docker
+RUN echo "docker:docker" | chpasswd
 
 RUN apt-get update
 RUN apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
