@@ -1,6 +1,6 @@
 # ZenOracles - Dockerized Orisi Oracles
 
-Smart contracts allows you to transform business logic, laws, and other rules into code. 
+Smart contracts allows you to transform deals, laws, business logic or any other rules into code. 
 Orisi is a platform that does smart contracts.
 Zenoracles project is a Docker/Container implementation of Orisi nodes.
 
