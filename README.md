@@ -282,4 +282,17 @@ https://docs.docker.com/installation/amazon/
 
 
 
+## Security
+
+This repo is not yet ready for production use. Take a look at issues. 
+Also - you should run zenoracles with selinux enabled
+```
+docker --selinux-enabled=true run orisi/zenoracles > /dev/null &
+```
+
+
+
+
+
+
 
