@@ -293,16 +293,18 @@ docker --selinux-enabled=true run orisi/zenoracles > /dev/null &
 
 ## Errors
 
-If you see weird stuff like this that probably means that you're out of RAM. You can init boot2docker with -m parameter:
+
 
 ![ScreenShot](http://i.imgur.com/DMQZQXe.png)
+
+If you see weird stuff like this that probably means that you're out of RAM. You can init boot2docker with -m parameter:
 
 
 ```
 boot2docker -m 2048 init
 ```
 
-This will make boot2docker use 2Gbs of RAM.
+This will make boot2docker use 2Gbs of RAM. It should be enough to boot ~15-20 Orisi Oracle nodes
 
 
 
