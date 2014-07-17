@@ -2,14 +2,14 @@
 
 version: v1beta1
 containers:
-  - name: zenoracle1
+  - name: zenoracle1a
     image: orisi/zenoracles
     command: ['nc', '-p', '8333', '-l', '-l']
 
         
 version: v1beta1
 containers:
-  - name: zenoracle2
+  - name: zenoracle2a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
 
@@ -17,84 +17,76 @@ containers:
       
 version: v1beta1
 containers:
-  - name: zenoracle3
+  - name: zenoracle3a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
 
 
 version: v1beta1
 containers:
-  - name: zenoracle4
+  - name: zenoracle4a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
 
 version: v1beta1
 containers:
-  - name: zenoracle5
+  - name: zenoracle5a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
 
 version: v1beta1
 containers:
-  - name: zenoracle6
+  - name: zenoracle6a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
     
 version: v1beta1
 containers:
-  - name: zenoracle7
+  - name: zenoracle7a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
     
 version: v1beta1
 containers:
-  - name: zenoracle8
+  - name: zenoracle8a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
     
 version: v1beta1
 containers:
-  - name: zenoracle9
+  - name: zenoracle9a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
     
 version: v1beta1
 containers:
-  - name: zenoracle10
+  - name: zenoracle10a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
     
 version: v1beta1
 containers:
-  - name: zenoracle11
+  - name: zenoracle11a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
     
 version: v1beta1
 containers:
-  - name: zenoracle12
+  - name: zenoracle12a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
 
 
 version: v1beta1
 containers:
-  - name: zenoracle13
-    image: orisi/zenoracles
-    command: ['supervisord', '-p', '8333', '-l', '-l']
-    
-    
-
-version: v1beta1
-containers:
-  - name: zenoracle14
+  - name: zenoracle13a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
     
@@ -102,7 +94,15 @@ containers:
 
 version: v1beta1
 containers:
-  - name: zenoracle15
+  - name: zenoracle14a
+    image: orisi/zenoracles
+    command: ['supervisord', '-p', '8333', '-l', '-l']
+    
+    
+
+version: v1beta1
+containers:
+  - name: zenoracle15a
     image: orisi/zenoracles
     command: ['supervisord', '-p', '8333', '-l', '-l']
         
