@@ -40,7 +40,7 @@ There are two ways to run Docker:
 
 Both ways are very easy, and will take you no more than 5 minutes.
 
-If you have docker installed alraedy you can go straight to[Installing Orisi Docker Image](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
+If you have docker installed alraedy you can go straight to [__Installing Orisi Docker Image__](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
 
 
 ### Linux
