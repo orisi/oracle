@@ -33,6 +33,7 @@ docker build -t zenoracles .
 
 ![ScreenShot](http://pixabay.com/static/uploads/photo/2014/04/05/11/32/stone-316225_640.jpg)
 
+
 ## Docker Installation process
 
 To run Oracle nodes as docker containers you're going to have to install docker package. 
@@ -85,6 +86,7 @@ https://github.com/boot2docker/windows-installer/releases
 
 https://github.com/boot2docker/osx-installer/releases
 
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/skrin0.png)
 
 After installing and opening Terminal window:
 
