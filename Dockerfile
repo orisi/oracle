@@ -7,8 +7,8 @@ RUN useradd docker
 RUN echo "docker:docker" | chpasswd
 RUN echo "docker ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-RUN sudo apt-get update
-RUN sudo apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
+RUN apt-get update
+RUN apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
 
 USER docker
 
