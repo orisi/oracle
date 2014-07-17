@@ -139,72 +139,20 @@ docker ps
 #### See properties of certain container
 
 ```
-docker@boot2docker:~/zenoracles$ docker inspect trusting_bardeen   
+docker inspect trusting bardeen
+```
+
+You can use this command to check ip of the container to login via ssh or check where the persistent folder lies.
+
+
+```
+
 [{
     "Args": [],
     "Config": {
-        "AttachStderr": true,
-        "AttachStdin": false,
-        "AttachStdout": true,
-        "Cmd": [
-            "/usr/bin/supervisord"
-        ],
-        "CpuShares": 0,
-        "Cpuset": "",
-        "Domainname": "",
-        "Entrypoint": null,
-        "Env": [
-            "HOME=/",
-            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-        ],
-        "ExposedPorts": {
-            "22/tcp": {},
-            "2523/tcp": {},
-            "8333/tcp": {},
-            "8444/tcp": {}
-        },
-        "Hostname": "49b1e9fcb605",
-        "Image": "orisi/zenoracles",
-        "Memory": 0,
-        "MemorySwap": 0,
-        "NetworkDisabled": false,
-        "OnBuild": null,
-        "OpenStdin": false,
-        "PortSpecs": null,
-        "StdinOnce": false,
-        "Tty": false,
-        "User": "",
-        "Volumes": {
-            "/disk": {}
-        },
-        "WorkingDir": "/disk"
-    },
-    "Created": "2014-07-17T15:30:37.97079109Z",
-    "Driver": "aufs",
-    "ExecDriver": "native-0.2",
-    "HostConfig": {
-        "Binds": null,
-        "ContainerIDFile": "",
-        "Dns": null,
-        "DnsSearch": null,
-        "Links": null,
-        "LxcConf": [],
-        "NetworkMode": "bridge",
-        "PortBindings": {
-            "22/tcp": null,
-            "2523/tcp": null,
-            "8333/tcp": null,
-            "8444/tcp": null
-        },
-        "Privileged": false,
-        "PublishAllPorts": false,
-        "VolumesFrom": null
-    },
-    "HostnamePath": "/mnt/sda1/var/lib/docker/containers/49b1e9fcb605a05b35ae2112b040fbe95e4221d8b9960f6467d23f800d17fb13/hostname",
-    "HostsPath": "/mnt/sda1/var/lib/docker/containers/49b1e9fcb605a05b35ae2112b040fbe95e4221d8b9960f6467d23f800d17fb13/hosts",
-    "Id": "49b1e9fcb605a05b35ae2112b040fbe95e4221d8b9960f6467d23f800d17fb13",
-    "Image": "de694088fb558d6be0c9967d120741476ced09b46bb3c1d11bfa4ec29461a187",
-    "MountLabel": "",
+   
+   ..
+   
     "Name": "/trusting_bardeen",
     "NetworkSettings": {
         "Bridge": "docker0",
@@ -217,27 +165,13 @@ docker@boot2docker:~/zenoracles$ docker inspect trusting_bardeen
             "2523/tcp": null,
             "8333/tcp": null,
             "8444/tcp": null
-        }
-    },
-    "Path": "/usr/bin/supervisord",
-    "ProcessLabel": "",
-    "ResolvConfPath": "/etc/resolv.conf",
-    "State": {
-        "ExitCode": 0,
-        "FinishedAt": "0001-01-01T00:00:00Z",
-        "Paused": false,
-        "Pid": 11277,
-        "Running": true,
-        "StartedAt": "2014-07-17T15:30:38.97525099Z"
-    },
+   
+   ..
+   
+   
     "Volumes": {
         "/disk": "/mnt/sda1/var/lib/docker/vfs/dir/9a92e96d0a9715aa3b3927d82051de46eda88f3d1ad6337509cf84a6020f69b3"
-    },
-    "VolumesRW": {
-        "/disk": true
-    }
-}
-
+   
 ```
 
 
