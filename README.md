@@ -117,16 +117,21 @@ docker build -t zenoracle .
 ### Updating your Orisi containers
 
 ```
-docker pull 83tb/zenoracles
+docker pull orisi/zenoracles
 ```
 
-After getting the new image, restart the container. This will fetch every change in the docker container itself. But sometimes the container code will remain the same, you need "orisi code" updating mechanism.
-
-This can be implemented easily in the Dockerfile (RUN command)
-Thanks to this trick you're going to ONLY need to send "restart signal" to your containers.
+After getting the new image, restart the container. This will fetch every change in the docker container itself. 
 
 ### Other useful commands
 ![ScreenShot](http://zenoracles.s3.amazonaws.com/README/commands.png)
+
+#### List running containers
+
+```
+docker ps
+```
+
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/dockerps.png)
 
 
 ## Why Orisi and Docker?
