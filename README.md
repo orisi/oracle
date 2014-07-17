@@ -138,6 +138,13 @@ After getting the new image, restart the container. This will fetch every change
 ### Other useful commands
 ![ScreenShot](http://zenoracles.s3.amazonaws.com/README/commands.png)
 
+
+#### Display logs for a container
+
+```
+docker logs nostalgic_elion
+```
+
 #### List running containers
 
 ```
