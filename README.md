@@ -139,7 +139,7 @@ docker ps
 #### See properties of certain container
 
 ```
-docker inspect trusting bardeen
+docker inspect trusting_bardeen
 ```
 
 You can use this command to check ip of the container to login via ssh or check where the persistent folder lies.
@@ -173,6 +173,19 @@ You can use this command to check ip of the container to login via ssh or check 
         "/disk": "/mnt/sda1/var/lib/docker/vfs/dir/9a92e96d0a9715aa3b3927d82051de46eda88f3d1ad6337509cf84a6020f69b3"
    
 ```
+
+#### Stop all containers
+```
+docker stop $(docker ps -a -q)
+```
+#### Erase all containers
+```
+docker rm $(docker ps -a -q)
+```
+
+
+
+
 
 
 ## Why Orisi and Docker?
