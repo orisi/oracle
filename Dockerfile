@@ -6,6 +6,9 @@ RUN mkdir /disk
 RUN useradd docker
 RUN echo "docker:docker" | chpasswd
 
+USER docker
+
+
 RUN apt-get update
 RUN apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
 RUN apt-get install -y build-essential make g++ libtool autotools-dev autoconf python-dev
