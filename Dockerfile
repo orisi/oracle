@@ -5,30 +5,32 @@ RUN mkdir /disk
 
 RUN useradd docker
 RUN echo "docker:docker" | chpasswd
+RUN echo "docker ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
 
 USER docker
 
 
-RUN apt-get update
-RUN apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
-RUN apt-get install -y build-essential make g++ libtool autotools-dev autoconf python-dev
+RUN sudo apt-get update
+RUN sudo apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
+RUN sudo apt-get install -y build-essential make g++ libtool autotools-dev autoconf python-dev
 RUN echo 'root:password' |chpasswd
-RUN chmod 777 /var/run/screen
-RUN mkdir /var/run/sshd
+RUN sudo chmod 777 /var/run/screen
+RUN sudo mkdir /var/run/sshd
 
 
 WORKDIR /disk
 
 
 
-RUN git clone  https://github.com/orisi/orisi.git /disk/orisi
-RUN git clone  https://github.com/orisi/zenoracles.git /disk/zenoracles
+RUN sudo git clone  https://github.com/orisi/orisi.git /disk/orisi
+RUN sudo git clone  https://github.com/orisi/zenoracles.git /disk/zenoracles
 
-RUN chmod +x /disk/orisi/docker_install.sh
+RUN sudo chmod +x /disk/orisi/docker_install.sh
 
 
 
-RUN /disk/orisi/docker_install.sh
+RUN sudo /disk/orisi/docker_install.sh
 
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
