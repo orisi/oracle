@@ -55,6 +55,7 @@ If you're platform is Linux that probably means you can use docker natively:
 ```
 curl -s https://get.docker.io/ubuntu/ | sudo sh
 ```
+https://docs.docker.com/installation/ubuntulinux/
 
 ##### RedHat 
 
