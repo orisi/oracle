@@ -7,32 +7,6 @@ Zenoracles project is a Docker/Container implementation of Orisi nodes.
 
 More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
-## Why Orisi and Docker?
-
-* We need a way to separate __dev-ops__ code from Oracle/Client codebase
-* We need to be able to __automate__ and __optimize__ build process
-* There must a simple and fast way to use it on multiple __hardware__ or __IAAS__ platforms
-* There must be a __oneliner__ that __runs__ whole Oracle
-```
-docker run orisi/zenoracles
-```
-* There must be an __oneliner__ to __fetch__ the newest image
-```
-docker pull orisi/zenoracles
-```
-* There must be a way to easily __update core Orisi code__ without interacting/logging into Orisi node
-```
-docker restart orisi/zenoracles
-```
-
-* There must be an easy way to fastly __build__ Orisi docker image __from source__
-```
-git clone git@github.com:orisi/zenoracles.git
-cd zenoracles
-docker build -t zenoracles .
-```
-
-* There must be a way to __deploy__ and test new code fast in __multiple scenarios and enviroments__
 
 
 ## Docker Installation process
@@ -175,6 +149,34 @@ Thanks to this trick you're going to ONLY need to send "restart signal" to your 
 
 So let's say you have a container image that is 1GB in size. If you wanted to use a Full VM, you would need to have 1GB times x number of VMs you want. With LXC and AuFS you can share the bulk of the 1.366 GB and if you have 1000 containers you still might only have a little over 1GB of space for the containers OS, assuming they are all running the same OS image.
 
+
+
+## Why Orisi and Docker?
+
+* We need a way to separate __dev-ops__ code from Oracle/Client codebase
+* We need to be able to __automate__ and __optimize__ build process
+* There must a simple and fast way to use it on multiple __hardware__ or __IAAS__ platforms
+* There must be a __oneliner__ that __runs__ whole Oracle
+```
+docker run orisi/zenoracles
+```
+* There must be an __oneliner__ to __fetch__ the newest image
+```
+docker pull orisi/zenoracles
+```
+* There must be a way to easily __update core Orisi code__ without interacting/logging into Orisi node
+```
+docker restart orisi/zenoracles
+```
+
+* There must be an easy way to fastly __build__ Orisi docker image __from source__
+```
+git clone git@github.com:orisi/zenoracles.git
+cd zenoracles
+docker build -t zenoracles .
+```
+
+* There must be a way to __deploy__ and test new code fast in __multiple scenarios and enviroments__
 
 
 
