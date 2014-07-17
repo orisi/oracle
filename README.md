@@ -21,7 +21,12 @@ To run Oracle nodes as docker containers you're going to have to install docker 
 There are two ways to run Docker:
 
 - Native, using Linux
+
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/native.png)
+
 - Booting Linux VM inside Windows or Macosx.
+
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/boot2docker.png)
 
 Both ways are very easy, and will take you no more than 5 minutes.
 
@@ -84,21 +89,12 @@ boot2docker ssh
 
 
 
-## Installing Orisi Docker Image
-
-
+## Running Orisi Oracle node
 
 ![ScreenShot](http://zenoracles.s3.amazonaws.com/README/skrin1.png)
 
 
 So you have Docker installed. Now the simple and fastest way to have an oracle up and running is to fetch Orisi image and run it.
-
-```
-docker pull orisi/zenoracles
-```
-This command will fetch an image of the pre-build docker container for Orisi. 
-
-## Running Orisi
 
 ```
 docker run orisi/zenoracles > /dev/null &
@@ -115,6 +111,8 @@ docker build -t zenoracle .
 
 >Whole process should take around 20 minutes. Your mileage may vary.
 
+## What's running inside the container?
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/content.png)
 
 ### Updating your Orisi containers
 
@@ -127,6 +125,8 @@ After getting the new image, restart the container. This will fetch every change
 This can be implemented easily in the Dockerfile (RUN command)
 Thanks to this trick you're going to ONLY need to send "restart signal" to your containers.
 
+### Other useful commands
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/commands.png)
 
 
 ## Why Orisi and Docker?
