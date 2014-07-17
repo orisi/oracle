@@ -11,8 +11,13 @@ More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
 If you have docker installed - running Orisi Oracle node is as easy as typing
 
+
 ```
-docker run orisi/zenoracles
+docker pull orisi/zenoracles
+```
+
+```
+docker run orisi/zenoracles > /dev/null &
 ```
 
 That's all!
@@ -97,6 +102,12 @@ boot2docker ssh
 
 
 So you have Docker installed. Now the simple and fastest way to have an oracle up and running is to fetch Orisi image and run it.
+
+
+```
+docker pull orisi/zenoracles
+```
+
 
 ```
 docker run orisi/zenoracles > /dev/null &
