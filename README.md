@@ -86,9 +86,11 @@ https://github.com/boot2docker/windows-installer/releases
 
 https://github.com/boot2docker/osx-installer/releases
 
+
+## I have a terminal with docker command working. What now?
+
 ![ScreenShot](http://zenoracles.s3.amazonaws.com/README/skrin0.png)
 
-After installing and opening Terminal window:
 
 ```
 boot2docker init
