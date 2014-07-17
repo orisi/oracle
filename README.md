@@ -7,7 +7,13 @@ Zenoracles project is a Docker/Container implementation of Orisi nodes.
 
 More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
+## Quick install
 
+If you have docker installed running Orisi Oracle node is as easy as typing
+
+```
+docker run orisi/zenoracles
+```
 
 ## Docker Installation process
 
