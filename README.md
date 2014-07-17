@@ -40,7 +40,7 @@ There are two ways to run Docker:
 
 Both ways are very easy, and will take you no more than 5 minutes.
 
-If you have docker installed alraedy you can go straight to [__Installing Orisi Docker Image__](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
+If you have docker installed already you can go straight to [__Installing Orisi Docker Image__](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
 
 
 ### Linux
@@ -65,6 +65,8 @@ https://docs.docker.com/installation/debian/
 #### Centos
 
 https://docs.docker.com/installation/centos/
+
+If you installed docker package succesfully go straight to [__Installing Orisi Docker Image__](https://github.com/orisi/zenoracles/blob/master/README.md#installing-orisi-docker-image)
 
 
 ### Install Boot2Docker (for MacOSX and Windows users)
