@@ -2,7 +2,21 @@
 
 version: v1beta1
 containers:
-  - name: zenoracle1
+  - name: oracle
     image: orisi/zenoracles
- 
- 
+    
+    ports:
+    - name: ssh
+        containerPort: 22
+        protocol: tcp
+    - name: oracle
+        containerPort: 2523
+        protocol: tcp
+    - name: bitcoind
+        containerPort: 8333
+        protocol: tcp
+    - name: bitmessage
+        containerPort: 8444
+        protocol: tcp
+        
+    
