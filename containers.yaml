@@ -1,9 +1,19 @@
 # to be edited further
 
-version: v1beta1
+version: v1beta2
 containers:
   - name: oracle
     image: orisi/zenoracles
+    ports:
+      - name: ssh
+        containerPort: 22
+      - name: bitmessage
+        containerPort: 8444
+      - name: bitcoind
+        containerPort: 8333
+      - name: oracle
+        containerPort: 2523
+  
     
 
         
