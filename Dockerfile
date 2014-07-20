@@ -23,8 +23,6 @@ RUN git clone  https://github.com/orisi/oracle.git /disk/oracle
 
 RUN chmod +x /disk/oracle/docker_install.sh
 
-
-
 RUN /disk/oracle/docker_install.sh
 
 RUN chown -R docker /disk
@@ -33,19 +31,13 @@ RUN chown -R docker /disk/*
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 EXPOSE 22 8333 8444 2523
-#RUN cp -R .config ./
 
-#
 
 RUN chmod +x /disk/oracle/initial_oracle_run.sh
 RUN chmod +x /disk/oracle/initial_bitcoind_run.sh
 
-
-
-
 RUN cp /disk/oracle/initial* /usr/bin/
-#RUN echo "ORACLE_ADDRESS=\"18674hp8BBARJfmvqBwBvLs1EWByaerk7J\"" >> ./orisi/src/settings_local.py
-#CMD    ["./oracle/docker_runoracle.sh"]
+
 
 VOLUME /disk
 
