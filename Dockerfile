@@ -21,11 +21,11 @@ WORKDIR /disk
 RUN git clone  https://github.com/orisi/orisi.git /disk/orisi
 RUN git clone  https://github.com/orisi/oracle.git /disk/oracle
 
-RUN chmod +x /disk/orisi/docker_install.sh
+RUN chmod +x /disk/oracle/docker_install.sh
 
 
 
-RUN /disk/orisi/docker_install.sh
+RUN /disk/oracle/docker_install.sh
 
 RUN chown -R docker /disk
 RUN chown -R docker /disk/*
