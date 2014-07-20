@@ -10,7 +10,7 @@ More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 ## Quick install
 
 If you have docker installed - running Orisi Oracle node is as easy as typing
-
+If not -> [Installation]("zenoracles/blob/master/manual/docker_install.md")
 
 ```
 docker pull orisi/zenoracles
