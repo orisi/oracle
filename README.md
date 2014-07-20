@@ -23,7 +23,7 @@ docker run orisi/zenoracles > /dev/null &
 That's all!
 
 
-#### - If you don't have docker installed [super short Docker installation procedures](manual/docker_install.md)
+#### - If you don't have docker installed I prepared for you [super short Docker installation procedures](manual/docker_install.md), Linux, MacosX and Windows
 
 
 ## Building Orisi Docker Image from source
