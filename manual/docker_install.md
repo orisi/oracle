@@ -58,10 +58,11 @@ https://github.com/boot2docker/windows-installer/releases
 https://github.com/boot2docker/osx-installer/releases
 
 
-### Bootdocker is running. Now what?
+### Bootdocker is installed. Now what?
 
 ![ScreenShot](http://zenoracles.s3.amazonaws.com/README/skrin0.png)
 
+Open a console. Your system terminal.
 You need to initialize and start boot2docker, and then login
 
 ```
