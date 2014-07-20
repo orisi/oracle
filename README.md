@@ -9,9 +9,8 @@ More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
 ## Quick install
 
-If you have docker installed - running Orisi Oracle node is as easy as typing
+- If you have docker installed - running Orisi Oracle node is as easy as typing
 
-#### If you don't have docker installed here are some [super short Docker installation procedures](manual/docker_install.md)
 
 ```
 docker pull orisi/zenoracles
@@ -22,6 +21,9 @@ docker run orisi/zenoracles > /dev/null &
 ```
 
 That's all!
+
+
+#### - If you don't have docker installed [super short Docker installation procedures](manual/docker_install.md)
 
 
 ## Building Orisi Docker Image from source
