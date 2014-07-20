@@ -1,11 +1,7 @@
-# oracle - Dockerized Orisi Oracles
+# Dockerized Orisi Oracles
 
-Smart contracts allows you to transform deals, laws, business logic or any other rules into code. 
-Orisi is a platform that does smart contracts.
-oracle project is a Docker/Container implementation of Orisi nodes.
+The easiest way to launch an Oracle, or even bunch of them for testing purposes is to use our Docker based implementation. 
 
-
-More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
 ## Quick install
 
