@@ -10,7 +10,6 @@ The easiest way to launch an Oracle, or even bunch of them for testing purposes 
 - If you have docker installed - running Orisi Oracle node is as easy as typing
 
 
-(You have to do it from Linux, or inside Boot2docker)
 
 ```
 docker pull orisi/oracle
@@ -20,12 +19,14 @@ docker pull orisi/oracle
 docker run orisi/oracle > /dev/null &
 ```
 
+ProTip: You have to do it from inside of Linux, or inside Boot2docker Virtual Machine.
+
 That's all!
 
 
-### - If you don't have docker installed here is [super short Docker installation procedures](manual/docker_install.md), Linux, MacosX and Windows.
+#### - If you don't have docker installed here is [super short Docker installation procedures](manual/docker_install.md), Linux, MacosX and Windows.
 
-### [Docker usage cheatsheet](manual/docker_basics.md)
+#### [Docker usage cheatsheet](manual/docker_basics.md)
 
 ## Building Orisi Docker Image from source
 
