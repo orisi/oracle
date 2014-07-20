@@ -5,11 +5,11 @@ There are two ways to run Docker:
 
 - Native, using Linux
 
-![ScreenShot](http://oracle.s3.amazonaws.com/README/native.png)
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/native.png)
 
 - Booting Linux VM inside Windows or Macosx.
 
-![ScreenShot](http://oracle.s3.amazonaws.com/README/boot2docker.png)
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/boot2docker.png)
 
 Both ways are very easy, and will take you no more than 5 minutes.
 
