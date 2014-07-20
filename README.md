@@ -35,5 +35,5 @@ docker build -t zenoracle .
 >Whole process should take around 20 minutes. Your mileage may vary.
 
 ## What's running inside the container?
-![ScreenShot](http://oracle.s3.amazonaws.com/README/content.png)
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/content.png)
 
