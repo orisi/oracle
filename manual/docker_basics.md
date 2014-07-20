@@ -1,13 +1,13 @@
 ### Updating your Orisi containers
 
 ```
-docker pull orisi/zenoracles
+docker pull orisi/oracle
 ```
 
 After getting the new image, restart the container. This will fetch every change in the docker container itself. 
 
 ### Other useful commands
-![ScreenShot](http://zenoracles.s3.amazonaws.com/README/commands.png)
+![ScreenShot](http://oracle.s3.amazonaws.com/README/commands.png)
 
 
 #### Display logs for a container
@@ -22,7 +22,7 @@ docker logs nostalgic_elion
 docker ps
 ```
 
-![ScreenShot](http://zenoracles.s3.amazonaws.com/README/dockerps.png)
+![ScreenShot](http://oracle.s3.amazonaws.com/README/dockerps.png)
 
 
 #### See properties of certain container
@@ -104,22 +104,22 @@ docker rm $(docker ps -a -q)
 * There must a simple and fast way to use it on multiple __hardware__ or __IAAS__ platforms
 * There must be a __oneliner__ that __runs__ whole Oracle
 ```
-docker run orisi/zenoracles
+docker run orisi/oracle
 ```
 * There must be an __oneliner__ to __fetch__ the newest image
 ```
-docker pull orisi/zenoracles
+docker pull orisi/oracle
 ```
 * There must be a way to easily __update core Orisi code__ without interacting/logging into Orisi node
 ```
-docker restart orisi/zenoracles
+docker restart orisi/oracle
 ```
 
 * There must be an easy way to fastly __build__ Orisi docker image __from source__
 ```
-git clone git@github.com:orisi/zenoracles.git
-cd zenoracles
-docker build -t zenoracles .
+git clone git@github.com:orisi/oracle.git
+cd oracle
+docker build -t oracle .
 ```
 
 * There must be a way to __deploy__ and test new code fast in __multiple scenarios and enviroments__

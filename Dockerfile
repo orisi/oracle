@@ -19,7 +19,7 @@ WORKDIR /disk
 
 
 RUN git clone  https://github.com/orisi/orisi.git /disk/orisi
-RUN git clone  https://github.com/orisi/zenoracles.git /disk/zenoracles
+RUN git clone  https://github.com/orisi/oracle.git /disk/oracle
 
 RUN chmod +x /disk/orisi/docker_install.sh
 
@@ -37,15 +37,15 @@ EXPOSE 22 8333 8444 2523
 
 #
 
-RUN chmod +x /disk/zenoracles/initial_oracle_run.sh
-RUN chmod +x /disk/zenoracles/initial_bitcoind_run.sh
+RUN chmod +x /disk/oracle/initial_oracle_run.sh
+RUN chmod +x /disk/oracle/initial_bitcoind_run.sh
 
 
 
 
-RUN cp /disk/zenoracles/initial* /usr/bin/
+RUN cp /disk/oracle/initial* /usr/bin/
 #RUN echo "ORACLE_ADDRESS=\"18674hp8BBARJfmvqBwBvLs1EWByaerk7J\"" >> ./orisi/src/settings_local.py
-#CMD    ["./zenoracles/docker_runoracle.sh"]
+#CMD    ["./oracle/docker_runoracle.sh"]
 
 VOLUME /disk
 

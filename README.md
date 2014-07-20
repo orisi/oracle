@@ -1,8 +1,8 @@
-# ZenOracles - Dockerized Orisi Oracles
+# oracle - Dockerized Orisi Oracles
 
 Smart contracts allows you to transform deals, laws, business logic or any other rules into code. 
 Orisi is a platform that does smart contracts.
-Zenoracles project is a Docker/Container implementation of Orisi nodes.
+oracle project is a Docker/Container implementation of Orisi nodes.
 
 
 More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
@@ -13,11 +13,11 @@ More here -> https://github.com/orisi/wiki/wiki/Orisi-White-Paper
 
 
 ```
-docker pull orisi/zenoracles
+docker pull orisi/oracle
 ```
 
 ```
-docker run orisi/zenoracles > /dev/null &
+docker run orisi/oracle > /dev/null &
 ```
 
 That's all!
@@ -31,13 +31,13 @@ That's all!
 
 If you want to have everything installed from scratch you can just download the Dockerfile from the source:
 ```
-git clone https://github.com/orisi/zenoracles.git
-cd zenoracles
+git clone https://github.com/orisi/oracle.git
+cd oracle
 docker build -t zenoracle .
 ```
 
 >Whole process should take around 20 minutes. Your mileage may vary.
 
 ## What's running inside the container?
-![ScreenShot](http://zenoracles.s3.amazonaws.com/README/content.png)
+![ScreenShot](http://oracle.s3.amazonaws.com/README/content.png)
 
