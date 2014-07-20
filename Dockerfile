@@ -1,4 +1,4 @@
-FROM ubuntu:12.04
+FROM ubuntu:14.04
 MAINTAINER Kuba Kucharski <kuba@zenmakers.co>
 
 RUN mkdir /disk
