@@ -60,7 +60,7 @@ https://github.com/boot2docker/osx-installer/releases
 
 ### Bootdocker is installed. Now what?
 
-![ScreenShot](http://oracle.s3.amazonaws.com/README/skrin0.png)
+![ScreenShot](http://zenoracles.s3.amazonaws.com/README/skrin0.png)
 
 Open a console. Your system terminal.
 You need to initialize and start boot2docker, and then login
@@ -70,3 +70,10 @@ boot2docker init
 boot2docker start
 boot2docker ssh
 ```
+
+Last command will log you into the Boot2docker Virtual Machine which is a host for your containers!
+
+Now if command ```docker pull orisi/oracle``` works, that means you installed docker succesfully!
+
+
+
