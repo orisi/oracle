@@ -79,12 +79,15 @@ supervisord.log - logs you see when you does docker logs oracle_node on a host m
 
 All the code lies in a /disk folder of the container. You can access this folder from the boot2docker VM. To see where it is, do:
 
-```docker inspect oracle_node | grep /disk```
+```
+docker inspect oracle_node | grep /disk
+```
 
 The path will be something like this:
 
-```/var/lib/docker/vfs/dir/e5dd1b11d699441fa33b1ab97293f7ca6aa502b345e4b577173d0527f63b79ee```
-
+```
+/var/lib/docker/vfs/dir/e5dd1b11d699441fa33b1ab97293f7ca6aa502b345e4b577173d0527f63b79ee
+```
 
 To update Orisi code do: 
 
@@ -92,6 +95,7 @@ To update Orisi code do:
 cd /var/lib/docker/vfs/dir/e5dd1b11d699441fa33b1ab97293f7ca6aa502b345e4b577173d0527f63b79ee/orisi
 git pull
 ```
+
 And then to restart oracle node:
 
 ```
