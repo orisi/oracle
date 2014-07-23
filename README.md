@@ -10,7 +10,7 @@ The easiest way to launch an Oracle, or even bunch of them for testing purposes 
 - [Docker installation for Linux](https://github.com/orisi/oracle/blob/master/manual/docker_install.md#linux)
 
 
-## Quick install of Orisi node
+# Quick install of Orisi node
 
 - If you have docker installed - running Orisi Oracle node is as easy as typing
 
@@ -40,7 +40,7 @@ docker logs oracle_node | grep "BM address"
 docker logs oracle_node | grep "my pubkey"
 docker logs oracle_node | grep "my multisig address"
 ```
-### How to login into my oracle using ssh?
+## How to login into my oracle using ssh?
 
 First you need to get to know ip address of your container.
 ```
@@ -61,7 +61,7 @@ Now you can list the processes running on your container using standard linux co
 ps xa
 ```
 
-### Where are the logs?
+## Where are the logs?
 
 Logs are in /var/log/supervisord/
 
@@ -70,7 +70,7 @@ orisi.log - logs only for oracle.py
 supervisord.log - logs you see when you does docker logs oracle_node on a host machine, they contain everything
 
 
-#### How do I start/stop running a node?
+## How do I start/stop running a node?
 
 * Restart container
 ```
@@ -86,14 +86,6 @@ docker start oracle_node
 ```
 docker stop oracle_node
 ```
-
-
-
-
-
-
-
-
 
 
 
