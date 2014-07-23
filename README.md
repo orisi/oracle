@@ -63,7 +63,12 @@ ps xa
 
 ## Where are the logs?
 
-Logs are in /var/log/supervisord/
+The easiest way to see logs is not to login usings ssh, but use docker logs command
+```
+docker logs oracle_node
+```
+
+In the container itself logs are in /var/log/supervisord/
 
 orisi.log - logs only for oracle.py
 
