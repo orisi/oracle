@@ -84,9 +84,10 @@ All the code lies in a /disk folder of the container. You can access this folder
 The path will be something like this:
 
 ```/var/lib/docker/vfs/dir/e5dd1b11d699441fa33b1ab97293f7ca6aa502b345e4b577173d0527f63b79ee```
+```
 
 To update Orisi code do: 
-```
+
 cd /var/lib/docker/vfs/dir/e5dd1b11d699441fa33b1ab97293f7ca6aa502b345e4b577173d0527f63b79ee/orisi
 git pull
 ```
