@@ -1,8 +1,10 @@
-# Dockerized Orisi Oracles
+# System for launching Oracles in docker containers 
 
-The easiest way to launch an Oracle, or even bunch of them for testing purposes is to use our Docker based implementation. 
+The easiest way to launch an Oracle, or even bunch of them for testing purposes is to use our Docker based implementation. You need to  have docker app installed.
 
-#### If you're here for source code, it's not here - go to [Orisi Repo](https://github.com/orisi/orisi).
+[Docker installation for Windows](https://github.com/orisi/oracle/blob/master/manual/docker_install.md#install-boot2docker-for-macosx-and-windows-users)
+[Docker installation for MacOSX](https://github.com/orisi/oracle/blob/master/manual/docker_install.md#install-boot2docker-for-macosx-and-windows-users)
+[Docker installation for Linux](https://github.com/orisi/oracle/blob/master/manual/docker_install.md#linux)
 
 
 ## Quick install
