@@ -21,12 +21,62 @@ docker pull orisi/oracle
 ```
 
 ```
-docker run orisi/oracle > /dev/null &
+docker run -name oracle_node orisi/oracle > /dev/null &
 ```
 
 You have to do it from inside of Linux, or inside Boot2docker Virtual Machine. To login into your Boot2docker Virtual machine do ```bootdocker ssh``` in your local terminal.
 
 ## So I launched my node, what now?
+
+Upon first creation of the node's docker container we generated keys for you. You will need to share with us some things to get into the smart contract charter:
+
+- BitMessage address of your Oracle
+- Public address of your Oracle
+- Multi-sig address of your Oracle
+
+### You can do it using commands below
+```
+docker logs oracle_node | grep "BM address"
+docker logs oracle_node | grep "my pubkey"
+docker logs oracle_node | grep "my multisig address"
+```
+### How to login into my oracle using ssh?
+
+First you need to get to know ip address of your container.
+```
+docker inspect oracle_node | grep IPAddress
+```
+
+And then ssh into your machine:
+
+```
+ssh root@ip
+```
+
+Ssh running on the container is just a temporary measure, default password for root is .. password. Container is not exposed on public ip so it's not a big deal yet, but change it as soon as you can.
+
+Now you can list the processes running on your container using standard linux commands
+
+```
+ps xa
+```
+
+### Where are the logs?
+
+Logs are in /var/log/supervisord/
+
+orisi.log - logs only for oracle.py
+supervisord.log - logs you see when you does docker logs oracle_node on a host machine, they contain everything
+
+
+
+
+
+
+
+
+
+
 
 
 
