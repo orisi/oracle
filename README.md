@@ -2,6 +2,7 @@
 
 The easiest way to launch an Oracle, or even bunch of them for testing purposes is to use our Docker based implementation. You need to  have docker app installed.
 
+- [Notes about installation](manual/docker_install.md)
 - [Docker installation for Windows](https://github.com/orisi/oracle/blob/master/manual/docker_install.md#install-boot2docker-for-macosx-and-windows-users)
 
 - [Docker installation for MacOSX](https://github.com/orisi/oracle/blob/master/manual/docker_install.md#install-boot2docker-for-macosx-and-windows-users)
@@ -28,7 +29,7 @@ ProTip: You have to do it from inside of Linux, or inside Boot2docker Virtual Ma
 That's all!
 
 
-#### - If you don't have docker installed here is [super short Docker installation procedures](manual/docker_install.md), Linux, MacosX and Windows.
+
 
 #### [Docker usage cheatsheet](manual/docker_basics.md)
 
