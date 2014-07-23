@@ -49,11 +49,11 @@ If you want to test oracle on a non-linux machine you're going to need to run a 
 
 Install process is very easy. It's just click and install.
 
-#### Windows
+### Windows
 
 https://github.com/boot2docker/windows-installer/releases
 
-#### MacOSX
+### MacOSX
 
 https://github.com/boot2docker/osx-installer/releases
 
