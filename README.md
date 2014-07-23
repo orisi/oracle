@@ -66,10 +66,26 @@ ps xa
 Logs are in /var/log/supervisord/
 
 orisi.log - logs only for oracle.py
+
 supervisord.log - logs you see when you does docker logs oracle_node on a host machine, they contain everything
 
 
+#### How do I start/stop running a node?
 
+* Restart container
+```
+docker restart oracle_node
+```
+
+* Start container
+```
+docker start oracle_node
+```
+
+* Stop container
+```
+docker stop oracle_node
+```
 
 
 
