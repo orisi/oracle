@@ -75,6 +75,28 @@ orisi.log - logs only for oracle.py
 
 supervisord.log - logs you see when you does docker logs oracle_node on a host machine, they contain everything
 
+## Where is the code?
+
+All the code lies in a /disk folder of the container. You can access this folder from the boot2docker VM. To see where it is, do:
+
+```docker inspect oracle_node | grep /disk```
+
+The path will be something like this:
+
+```/var/lib/docker/vfs/dir/e5dd1b11d699441fa33b1ab97293f7ca6aa502b345e4b577173d0527f63b79ee```
+
+To update Orisi code do: 
+```
+cd /var/lib/docker/vfs/dir/e5dd1b11d699441fa33b1ab97293f7ca6aa502b345e4b577173d0527f63b79ee/orisi
+git pull
+```
+And then to restart oracle node:
+
+```
+docker restart oracle_node
+```
+
+You can of course change the repo from the official one to your own, or some different branch, just go into the persistent folder for your container and do your thing.
 
 ## How do I start/stop running a node?
 
