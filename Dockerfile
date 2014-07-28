@@ -37,7 +37,7 @@ RUN chmod +x /disk/oracle/initial_oracle_run.sh
 RUN chmod +x /disk/oracle/initial_bitcoind_run.sh
 
 RUN cp /disk/oracle/initial* /usr/bin/
-
+RUN chmod 755 /var/run/screen
 
 VOLUME /disk
 
