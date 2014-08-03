@@ -3,7 +3,7 @@
 version: v1beta2
 containers:
   - name: oracle
-    image: orisi/zenoracles
+    image: orisi/oracle
     ports:
       - name: ssh
         hostPort: 22
