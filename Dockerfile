@@ -25,7 +25,7 @@ RUN chmod +x /disk/orisi/docker_install.sh
 
 
 
-RUN /disk/orisi/docker_install.sh
+RUN /disk/oracle/docker_install.sh
 
 RUN chown -R docker /disk
 RUN chown -R docker /disk/*
