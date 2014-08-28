@@ -31,13 +31,11 @@ docker run -name oracle_node orisi/oracle > /dev/null &
 
 Upon first creation of the node's docker container we generated keys for you. You will need to share with us some things to get into the smart contract charter:
 
-- BitMessage address of your Oracle
 - Public address of your Oracle
 - Multi-sig address of your Oracle
 
 ### You can do it using commands below
 ```
-docker logs oracle_node | grep "BM address"
 docker logs oracle_node | grep "my pubkey"
 docker logs oracle_node | grep "my multisig address"
 ```
