@@ -7,7 +7,7 @@ DIR=$HOME
 
 if [ -z $(pgrep bitcoind) ]
 then
-    $HOME/bitcoin/bin/$(getconf LONG_BIT)/bitcoind -connect=127.0.0.1 -datadir=$HOME/.bitcoin/ -rpcport=2521 &
+    $HOME/bitcoin/bin/$(getconf LONG_BIT)/bitcoind -datadir=$HOME/.bitcoin/ -rpcport=2521 &
     sleep 2
 fi
 
