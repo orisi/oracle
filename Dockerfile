@@ -12,7 +12,7 @@ RUN apt-get install -y build-essential make g++ libtool autotools-dev autoconf p
 RUN echo 'root:password' |chpasswd
 
 RUN mkdir /var/run/sshd
-
+RUN echo export LC_ALL=\"en_US.UTF-8\" > /root/.bash_profile
 
 WORKDIR /disk
 
