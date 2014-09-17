@@ -21,8 +21,12 @@ cp $DIR/src/settings_local.py.example $DIR/src/settings_local.py
 mkdir $HOME/.bitcoin/
 touch $HOME/.bitcoin/bitcoin.conf
 
+
 BTCRPC=`openssl rand -hex 32`
 echo rpcuser=bitrpc >> $HOME/.bitcoin/bitcoin.conf
 echo rpcpassword=$BTCRPC >> $HOME/.bitcoin/bitcoin.conf
+echo connect=127.0.0.1:8333 >> $HOME/.bitcoin/bitcoin.conf
+
 echo BITCOIND_RPC_PASSWORD = \"$BTCRPC\" >> $DIR/src/settings_local.py
 
+echo BITCOIND_TEST_MODE=True >> $DIR/src/settings_local.py
