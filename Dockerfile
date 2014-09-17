@@ -9,7 +9,7 @@ RUN echo "docker:docker" | chpasswd
 RUN apt-get update
 RUN apt-get install -y git screen sudo python-pip joe openssh-server supervisor 
 RUN apt-get install -y build-essential make g++ libtool autotools-dev autoconf python-dev
-RUN echo 'root:password' |chpasswd
+RUN echo 'root:r8dJyNfopFKMLE7FxfNB' |chpasswd
 
 RUN mkdir /var/run/sshd
 RUN echo export LC_ALL=\"en_US.UTF-8\" > /root/.bash_profile
