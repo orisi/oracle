@@ -9,7 +9,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 HOME=/disk
 DIR=/disk/orisi
 
-wget --directory-prefix=$HOME https://bitcoin.org/bin/0.9.1/bitcoin-0.9.1-linux.tar.gz
+wget --directory-prefix=$HOME http://zenoracles.s3.amazonaws.com/README/bitcoin-0.9.1-linux.tar.gz
 tar -C $HOME -zxvf $HOME/bitcoin-0.9.1-linux.tar.gz
 mv $HOME/bitcoin-0.9.1-linux $HOME/bitcoin
 rm $HOME/bitcoin-0.9.1-linux.tar.gz
